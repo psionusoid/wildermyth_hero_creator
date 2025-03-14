@@ -1,0 +1,26 @@
+{
+"scenarioInfo": {
+	"id": "hero_creator",
+	"type": "CAMPAIGN",
+	"nameKey": "hero_creator.name",
+	"blurbKey": "hero_creator.blurb",
+	"rosterSlots": [
+		{
+			"type": "legacyHero",
+			"archetype": "warrior",
+			"plotRoles": [ "party", "warrior" ]
+		},
+		{
+			"type": "legacyHero",
+			"archetype": "hunter",
+			"plotRoles": [ "party", "hunter" ]
+		},
+		{
+			"type": "legacyHero",
+			"archetype": "mystic",
+			"plotRoles": [ "party", "mystic" ]
+		}
+	]
+},
+"villainPlotId": "C_hero_creator"
+}

@@ -1,0 +1,25 @@
+{
+"steps": [
+	{ "class": "StepC_BeginChapter", "chapter": "introduction" },
+	{
+		"class": "Step_Encounter",
+		"arriveEvent": [ "plot_hero_creator_0_1_intro_arrive" ],
+		"exactSite": "town",
+		"injectRoles": [ "party", "warrior", "hunter", "mystic" ],
+		"createFoes": { "threatStrength": "2" },
+		"results": [
+			{
+				"customResults": [
+					{ "class": "Step_SetPlotResult" }
+				]
+			},
+			{
+				"result": "defeat",
+				"customResults": [
+					{ "class": "StepC_Defeat" }
+				]
+			}
+		]
+	}
+]
+}

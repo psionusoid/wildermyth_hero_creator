@@ -1,0 +1,52 @@
+{
+"objectives": [
+	{
+		"class": "Objective_KillAllEnemies",
+		"onSuccess": [
+			{ "class": "Step_SetPlotResult", "resultPriority": 10 }
+		],
+		"onFail": [
+			{ "class": "Step_SetPlotResult", "result": "defeat", "resultPriority": 100 }
+		]
+	}
+],
+"steps": [
+	{
+		"class": "StepM_SetupMission",
+		"missionResults": [
+			{
+				"defaultEvent": false,
+				"customResults": [
+					{
+						"class": "StepM_Event",
+						"eventIds": [ "plot__0_1_lab_victory" ]
+					}
+				]
+			}
+		]
+	},
+	{
+		"class": "StepM_SpawnExact",
+		"side": "HERO",
+		"location": {
+			"class": "TileSpec.ExactTiles",
+			"xs": [ 5 ],
+			"ys": [ 3 ]
+		},
+		"combatantCards": true
+	},
+	{
+		"class": "StepM_SpawnExact",
+		"location": {
+			"class": "TileSpec.ExactTiles",
+			"xs": [ 5 ],
+			"ys": [ 8 ]
+		},
+		"combatantCards": true
+	},
+	{
+		"class": "Step_AddObjectives",
+		"objectives": [ "Objective_KillAllEnemies" ]
+	}
+]
+}

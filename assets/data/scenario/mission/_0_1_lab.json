@@ -1,0 +1,25 @@
+{
+"scenarioInfo": {
+	"id": "_0_1_lab",
+	"type": "MISSION",
+	"nameKey": "_0_1_lab.name",
+	"blurbKey": "_0_1_lab.blurb",
+	"rosterSlots": [
+		{},
+		{},
+		{}
+	]
+},
+"playableFactions": [
+	{ "factionRole": "HERO", "plotRole": "attacker" },
+	{ "factionRole": "VILLAIN", "plotRole": "defender" }
+],
+"site": { "type": "SITE", "siteMissionPlanId": "_0_1_lab" },
+"inhabitants": [
+	{
+		"factionRole": "VILLAIN",
+		"threat": { "strength": 6 },
+		"calamities": 6
+	}
+]
+}

@@ -1,0 +1,38 @@
+{
+"steps": [
+	{
+		"class": "StepC_MapConfig",
+		"mapConfig": {
+			"mapRadius": 12,
+			"customChapters": [
+				{
+					"sites": [
+						{ "role": "town", "siteType": "town", "foes": "none" },
+						{ "role": "otherSite" }
+					],
+					"extraTiles": 0
+				},
+				{
+					"sites": [
+						{ "role": "site3", "siteType": "fancyStation", "placement": "remote" },
+						{ "role": "otherSite" },
+						{ "role": "otherSite" },
+						{ "role": "otherSite", "foes": "secondaryEnemy" }
+					]
+				}
+			]
+		}
+	},
+	{
+		"class": "Step_SubPlot",
+		"plotId": "C_hero_creator_1",
+		"copyIn": [
+			{ "from": "party" },
+			{ "from": "warrior" },
+			{ "from": "hunter" },
+			{ "from": "mystic" }
+		]
+	},
+	{ "class": "StepC_Victory" }
+]
+}

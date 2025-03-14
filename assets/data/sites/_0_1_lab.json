@@ -1,0 +1,87 @@
+{
+"declaredEncounterResults": [ "victory", "defeat" ],
+"structure": "custom",
+"skipDefaultPlots": true,
+"details": [
+	{
+		"class": "MapDetail_DrawFloor",
+		"floorTiles": {
+			"xs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9 ],
+			"ys": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ]
+		},
+		"floorLayer3": {
+			"preset": "biomeTop",
+			"initialValue": "[0,1]*[0,1]",
+			"drawnData": {}
+		},
+		"floorLayer4": {
+			"preset": "biomeBase",
+			"initialValue": "[0,1]*[0,1]",
+			"drawnData": {}
+		}
+	},
+	{
+		"class": "MapDetail_DrawIndoorLighting",
+		"initialValue": "0",
+		"drawIndoorLighting": {}
+	},
+	{
+		"class": "MapDetail_DrawWalls",
+		"tiles": {
+			"xs": [ 2, 2, 7, 3, 3, 2, 7, 4, 2, 7, 5, 5, 2, 7, 6, 6, 2, 7, 7 ],
+			"ys": [ 6, 11, 6, 6, 11, 7, 7, 11, 8, 8, 6, 11, 9, 9, 6, 11, 10, 10, 11 ]
+		},
+		"wallStyle": {
+			"texture": "images/wallStoneShort_capped.png",
+			"uvBase": 1,
+			"uvHead": 0,
+			"zHead": -2.5,
+			"stretchSpan": 1.25,
+			"segments": [ 0.5, 4, 4, 4, 2, 2, 1, 1, 0.5 ],
+			"totalSpan": 19,
+			"hasWallCaps": true,
+			"perturbHeadOut": 0.04,
+			"perturbHeadSide": 0.01,
+			"isBoundary": true,
+			"joinWithOtherStyles": false
+		}
+	},
+	{
+		"class": "MapDetail_Door",
+		"locations": {
+			"class": "TileSpec.ExactTiles",
+			"xs": [ 4 ],
+			"ys": [ 6 ]
+		}
+	},
+	{ "class": "MapDetail_PlaceScenery" },
+	{
+		"class": "MapDetail_InteriorRegion",
+		"tiles": {
+			"xs": [ 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7 ],
+			"ys": [ 6, 7, 8, 9, 10, 11, 6, 7, 8, 9, 10, 11, 6, 7, 8, 9, 10, 11, 6, 7, 8, 9, 10, 11, 6, 7, 8, 9, 10, 11, 6, 7, 8, 9, 10, 11 ]
+		},
+		"forbidLampsAndScenery": {
+			"xs": [ 5 ],
+			"ys": [ 8 ]
+		}
+	},
+	{
+		"class": "MapDetail_RandomLamps",
+		"drawSpecificArea": {},
+		"drawExactLocations": {},
+		"drawForbidLampsAndScenery": {}
+	},
+	{
+		"class": "MapDetail_RandomScenery",
+		"drawSpecificArea": {},
+		"drawExactLocations": {},
+		"drawForbidScenery": {}
+	},
+	{
+		"class": "MapDetail_Debris",
+		"drawDebrisChance": {}
+	},
+	{ "class": "MapDetail_Plot", "plotId": "M__0_1_lab" }
+]
+}
