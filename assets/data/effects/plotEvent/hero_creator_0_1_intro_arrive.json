@@ -16,47 +16,215 @@
 	{ "template": "INJECTED_TILE" },
 	{ "template": "INJECTED_SITE" },
 	{ "template": "INJECTED_PARTY" },
-	{ "template": "INJECTED_THREAT" }
-],
-"outcomes": [
+	{ "template": "INJECTED_THREAT" },
 	{
-		"class": "Description",
-		"script": [
+		"role": "hero",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"scoreFunction": null,
+		"notAlreadyMatchedAs": []
+	},
+	{
+		"template": "CHOICE",
+		"promptScript": [
 			{
 				"class": "comicNode_Panel",
 				"panel": {
 					"size": "full",
 					"actorSlots": [
 						{
-							"role": "party",
+							"role": "hero",
 							"equipment": {},
-							"anchor": { "x": 0.251, "y": 0.557 },
+							"anchor": { "x": 0.337, "y": 0.432 },
 							"size": 0.5823668
 						}
 					],
 					"textSlots": [
 						{
 							"textSourceFile": "plotEvent/hero_creator_0_1_intro_arrive",
-							"textKey": "~01~~panel_001~1_party",
+							"textKey": "~01~prompt~panel_001~1_party",
 							"pointerOwner": "party",
 							"padXFraction": 0.34,
 							"padYFraction": 0.054,
 							"widthFraction": 0.3980158,
 							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "plotEvent/hero_creator_0_1_intro_arrive",
+							"textKey": "~01~prompt~panel_001~2_narration",
+							"style": "narration"
 						}
 					]
 				}
 			}
+		],
+		"options": [
+			{
+				"id": "one",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"size": "twoFifths",
+							"showNameTags": false,
+							"actorSlots": [
+								{
+									"role": "hero",
+									"form": "frame-interested",
+									"equipment": { "mode": "removeWeapons" },
+									"anchor": { "x": 0.527, "y": 0.556 },
+									"size": 0.891,
+									"drawDepth": -6,
+									"head": { "rotate": -6.642 },
+									"color": { "r": "0.86046141", "g": "0.7990104", "b": "0.76381606", "a": "1" },
+									"colorFilter": { "filterName": "hover", "strength": 0.4 }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "plotEvent/hero_creator_0_1_intro_arrive",
+									"textKey": "~02~choice_one~panel_001~1_hunter",
+									"style": "thought",
+									"pointerOwner": "hunter",
+									"padXFraction": 0.003,
+									"shrinkToFitText": true,
+									"pointerAdjust": { "dX": -30.230412, "dY": 12.281106, "scaleX": 0.66637784, "scaleY": 0.66637784 }
+								},
+								{
+									"textSourceFile": "plotEvent/hero_creator_0_1_intro_arrive",
+									"textKey": "~02~choice_one~panel_001~2_narration",
+									"style": "narration",
+									"backgroundColor": { "r": "0.37514567", "g": "0.20527384", "b": "0.18554723", "a": "1" },
+									"shrinkToFitText": true
+								},
+								{
+									"textSourceFile": "plotEvent/hero_creator_0_1_intro_arrive",
+									"textKey": "~02~choice_one~panel_001~3_hunter",
+									"pointerOwner": "hunter",
+									"location": "bottomLeft",
+									"padXFraction": 0.227,
+									"padYFraction": 0.045,
+									"widthFraction": 0.72864705,
+									"shrinkToFitText": true,
+									"pointerAdjust": { "rotate": -7.765166, "dX": -23.617455, "dY": -5.668203 }
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"id": "two",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"size": "twoFifths",
+							"showNameTags": false,
+							"actorSlots": [
+								{
+									"role": "hero",
+									"form": "frame-scheming",
+									"equipment": {
+										"mode": "removeWeapons",
+										"equipItemsById": [ "walkingStaff" ]
+									},
+									"anchor": { "x": 0.565, "y": 0.617 },
+									"size": 0.5802,
+									"drawDepth": -2.5,
+									"nameTag": "none",
+									"head": { "rotate": -16.867, "scaleY": -1 },
+									"foot": { "rotate": 0 },
+									"color": { "r": "0.80635768", "g": "0.80635768", "b": "0.80635768", "a": "1" },
+									"colorFilter": { "filterName": "hover", "strength": 0.6 }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "plotEvent/hero_creator_0_1_intro_arrive",
+									"textKey": "~03~choice_two~panel_001~1_hunter",
+									"style": "thought",
+									"pointerOwner": "hunter",
+									"padXFraction": 0.036,
+									"shrinkToFitText": true,
+									"pointerAdjust": { "dX": 2.8341618, "dY": -3.7788026 }
+								},
+								{
+									"textSourceFile": "plotEvent/hero_creator_0_1_intro_arrive",
+									"textKey": "~03~choice_two~panel_001~2_narration",
+									"style": "narration",
+									"backgroundColor": { "r": "0.37514567", "g": "0.20527384", "b": "0.18554723", "a": "1" },
+									"shrinkToFitText": true
+								},
+								{
+									"textSourceFile": "plotEvent/hero_creator_0_1_intro_arrive",
+									"textKey": "~03~choice_two~panel_001~3_hunter",
+									"pointerOwner": "hunter",
+									"location": "bottomLeft",
+									"padXFraction": 0.157,
+									"padYFraction": 0.073,
+									"shrinkToFitText": true
+								}
+							]
+						}
+					}
+				]
+			}
 		]
+	}
+],
+"outcomes": [
+	{
+		"class": "IfPlayerChose",
+		"ifPlayerChose": "one",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "Mission",
+					"goal": "story",
+					"combatants": [
+						{ "role": "hero", "side": "player" },
+						{ "role": "foes", "side": "enemy" }
+					],
+					"victoryEventIds": [ "plot_hero_creator_0_1_intro_victory" ]
+				}
+			]
+		}
 	},
 	{
-		"class": "Mission",
-		"goal": "story",
-		"combatants": [
-			{ "role": "party", "side": "player" },
-			{ "role": "foes", "side": "enemy" }
-		],
-		"victoryEventIds": [ "plot_hero_creator_0_1_intro_victory" ]
+		"class": "IfPlayerChose",
+		"ifPlayerChose": "two",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "ChangeControl",
+					"target": "npc",
+					"becomeAllyOf": "party",
+					"makeHero": true
+				},
+				{
+					"class": "Mission",
+					"goal": "story",
+					"combatants": [
+						{ "role": "npc", "side": "player" },
+						{ "role": "foes", "side": "enemy" }
+					],
+					"victoryEventIds": [ "plot_hero_creator_0_1_intro_victory" ]
+				}
+			]
+		}
 	}
-]
+],
+"implications": {
+	"generatedTargets": [
+		{
+			"createEntity": {
+				"query": { "baseTag": "human", "inRelationTo": "hero", "cloneRelatedEntity": true },
+				"control": "none"
+			}
+		}
+	]
+}
 }
