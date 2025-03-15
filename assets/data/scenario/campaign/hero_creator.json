@@ -4,21 +4,11 @@
 	"type": "CAMPAIGN",
 	"nameKey": "hero_creator.name",
 	"blurbKey": "hero_creator.blurb",
+	"sortNumber": 150,
 	"rosterSlots": [
 		{
 			"type": "legacyHero",
-			"archetype": "warrior",
-			"plotRoles": [ "party", "warrior" ]
-		},
-		{
-			"type": "legacyHero",
-			"archetype": "hunter",
-			"plotRoles": [ "party", "hunter" ]
-		},
-		{
-			"type": "legacyHero",
-			"archetype": "mystic",
-			"plotRoles": [ "party", "mystic" ]
+			"plotRoles": [ "party", "hero" ]
 		}
 	]
 },
