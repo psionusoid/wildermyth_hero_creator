@@ -1,9 +1,9 @@
 {
 "scenarioInfo": {
-	"id": "_0_1_lab",
+	"id": "hero_creator_0_1_lab",
 	"type": "MISSION",
-	"nameKey": "_0_1_lab.name",
-	"blurbKey": "_0_1_lab.blurb",
+	"nameKey": "hero_creator_0_1_lab.name",
+	"blurbKey": "hero_creator_0_1_lab.blurb",
 	"rosterSlots": [
 		{},
 		{},
@@ -14,7 +14,7 @@
 	{ "factionRole": "HERO", "plotRole": "attacker" },
 	{ "factionRole": "VILLAIN", "plotRole": "defender" }
 ],
-"site": { "type": "SITE", "siteMissionPlanId": "_0_1_lab" },
+"site": { "type": "SITE", "siteMissionPlanId": "hero_creator_0_1_lab" },
 "inhabitants": [
 	{
 		"factionRole": "VILLAIN",

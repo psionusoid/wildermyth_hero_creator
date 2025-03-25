@@ -187,6 +187,7 @@
 						{ "role": "hero", "side": "player" },
 						{ "role": "foes", "side": "enemy" }
 					],
+					"missionPlanOverride": "hero_creator_0_1_lab",
 					"victoryEventIds": [ "plot_hero_creator_0_1_intro_victory" ]
 				}
 			]
@@ -211,6 +212,7 @@
 						{ "role": "npc", "side": "player" },
 						{ "role": "foes", "side": "enemy" }
 					],
+					"missionPlanOverride": "hero_creator_0_1_lab",
 					"victoryEventIds": [ "plot_hero_creator_0_1_intro_victory" ]
 				}
 			]

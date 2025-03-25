@@ -82,6 +82,6 @@
 		"class": "MapDetail_Debris",
 		"drawDebrisChance": {}
 	},
-	{ "class": "MapDetail_Plot", "plotId": "M__0_1_lab" }
+	{ "class": "MapDetail_Plot", "plotId": "M_hero_creator_0_1_lab" }
 ]
 }
