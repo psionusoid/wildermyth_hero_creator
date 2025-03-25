@@ -27,7 +27,7 @@
 				"customResults": [
 					{
 						"class": "StepM_Event",
-						"eventIds": [ "plot_hero_creator_0_1_lab_victory" ]
+						"eventIds": [ "plot_hero_creator_0_1_intro_victory" ]
 					}
 				]
 			}
