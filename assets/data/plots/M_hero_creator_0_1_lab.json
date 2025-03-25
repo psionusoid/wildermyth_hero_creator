@@ -1,13 +1,21 @@
 {
 "objectives": [
 	{
-		"class": "Objective_KillAllEnemies",
+		"class": "Objective_Escape",
+		"objectiveId": "Objective_Escape.M_hero_creator_0_1_lab",
+		"feedback": [
+			{ "mission": "TUTORIAL_GOAL", "role": "targetTile" }
+		],
 		"onSuccess": [
 			{ "class": "Step_SetPlotResult", "resultPriority": 10 }
 		],
-		"onFail": [
-			{ "class": "Step_SetPlotResult", "result": "defeat", "resultPriority": 100 }
-		]
+		"revealEscapeZone": {
+			"class": "TileSpec.ExactTiles",
+			"offsetX": 30,
+			"offsetY": 4,
+			"xs": [ 34, 33, 32, 31, 30 ],
+			"ys": [ 27, 27, 27, 27, 27 ]
+		}
 	}
 ],
 "steps": [
@@ -36,17 +44,8 @@
 		"combatantCards": true
 	},
 	{
-		"class": "StepM_SpawnExact",
-		"location": {
-			"class": "TileSpec.ExactTiles",
-			"xs": [ 5 ],
-			"ys": [ 8 ]
-		},
-		"combatantCards": true
-	},
-	{
 		"class": "Step_AddObjectives",
-		"objectives": [ "Objective_KillAllEnemies" ]
+		"objectives": [ "Objective_Escape.M_hero_creator_0_1_lab" ]
 	}
 ]
 }
