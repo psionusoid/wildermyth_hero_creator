@@ -1,5 +1,702 @@
 [
 {
+    "id": "cagePetLab_critter",
+    "image": "scenery/cagePet_critter.png",
+    "tags": [],
+    "lengthRange": [ 0.3, 1.25 ],
+    "aspectRatio": 1.1896552,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_petRescue|petCritter",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_petCritter_critter"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+    ]
+},
+{
+    "id": "cagePetLab_birdDrauven",
+    "image": "scenery/cagePet_birdDrauven.png",
+    "tags": [],
+    "lengthRange": [ 0.3, 1.25 ],
+    "aspectRatio": 1.1896552,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_petRescue|petBirdDrauven",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_petBirdDrauven_birdDrauven"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+    ]
+},
+{
+    "id": "cagePetLab_catBlack",
+    "image": "scenery/cagePet_catBlack.png",
+    "tags": [],
+    "lengthRange": [ 0.3, 1.25 ],
+    "aspectRatio": 1.1896552,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_petRescue|petCatBlack",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|petCatBlack_shySwipes"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+    ]
+},
+{
+    "id": "cagePetLab_catShadow",
+    "image": "scenery/cagePet_catShadow.png",
+    "tags": [],
+    "lengthRange": [ 0.3, 1.25 ],
+    "aspectRatio": 1.1896552,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_petRescue|petCatShadow",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_petCatShadow_catShadow"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+    ]
+},
+{
+    "id": "cagePetLab_cub",
+    "image": "scenery/cagePet_cub.png",
+    "tags": [],
+    "lengthRange": [ 0.3, 1.25 ],
+    "aspectRatio": 1.1896552,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_petRescue|petCub",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_petCub_cub"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+    ]
+},
+{
+    "id": "cagePetLab_duck",
+    "image": "scenery/cagePet_duck.png",
+    "tags": [],
+    "lengthRange": [ 0.3, 1.25 ],
+    "aspectRatio": 1.1896552,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_petRescue|petDuck",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_petDuck_duck"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+    ]
+},
+{
+    "id": "cagePetLab_fireChicken",
+    "image": "scenery/cagePet_fireChicken.png",
+    "tags": [],
+    "lengthRange": [ 0.3, 1.25 ],
+    "aspectRatio": 1.1896552,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_petRescue|petFireChicken",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_petFireChicken_fireChicken"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+    ]
+},
+{
+    "id": "cagePetLab_meteor",
+    "image": "scenery/cagePet_meteor.png",
+    "tags": [],
+    "lengthRange": [ 0.3, 1.25 ],
+    "aspectRatio": 1.1896552,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_petRescue|petMeteor",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_petMeteor_meteor"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+    ]
+},
+{
+    "id": "cagePetLab_pinecone",
+    "image": "scenery/cagePet_pinecone.png",
+    "tags": [],
+    "lengthRange": [ 0.3, 1.25 ],
+    "aspectRatio": 1.1896552,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_petRescue|petPinecone",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_petPinecone_pinecone"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+    ]
+},
+{
+    "id": "cagePetLab_rabbit",
+    "image": "scenery/cagePet_rabbit.png",
+    "tags": [],
+    "lengthRange": [ 0.3, 1.25 ],
+    "aspectRatio": 1.1896552,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_petRescue|petRabbit",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_petRabbit_rabbit"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+    ]
+},
+{
+    "id": "cagePetLab_rat",
+    "image": "scenery/cagePet_rat.png",
+    "tags": [],
+    "lengthRange": [ 0.3, 1.25 ],
+    "aspectRatio": 1.1896552,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_petRescue|petRat",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_petRat_oneRat"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_crowOn",
+    "image": "scenery/shrineTransform_crowOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.1251647,
+    "stretchAspectRatio": "1",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|crow",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_crow_head",
+        "extraAspectTooltip|themePiece_crow_wings",
+        "extraAspectTooltip|themePiece_crow_leftArm",
+        "extraAspectTooltip|themePiece_crow_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_crowOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_treeOn",
+    "image": "scenery/shrineTransform_treeOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.1494253,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|tree",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_tree_elmsoul",
+        "extraAspectTooltip|themePiece_tree_leftArm",
+        "extraAspectTooltip|themePiece_tree_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_treeOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_bearOn",
+    "image": "scenery/shrineTransform_bearOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|bear",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_bear_tattoo",
+        "extraAspectTooltip|themePiece_bear_leftArm",
+        "extraAspectTooltip|themePiece_bear_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_bearOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_fireOn",
+    "image": "scenery/shrineTransform_fireOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|fire",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_fire_leftArm",
+        "extraAspectTooltip|themePiece_fire_rightArm",
+        "extraAspectTooltip|themePiece_fire_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_fireOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_foothillOn",
+    "image": "scenery/shrineTransform_foothillOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|foothill",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_foothill_leftArm",
+        "extraAspectTooltip|themePiece_foothill_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_foothillOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_frogOn",
+    "image": "scenery/shrineTransform_frogOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|frog",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_frog_head"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_frogOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_gemOn",
+    "image": "scenery/shrineTransform_gemOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|gem",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_gem_head",
+        "extraAspectTooltip|themePiece_gem_leftArm",
+        "extraAspectTooltip|themePiece_gem_rightArm",
+        "extraAspectTooltip|themePiece_gem_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_gemOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_greenOn",
+    "image": "scenery/shrineTransform_greenOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|green",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_green_tattoo",
+        "extraAspectTooltip|themePiece_green_leftArm",
+        "extraAspectTooltip|themePiece_green_rightArm",
+        "extraAspectTooltip|themePiece_green_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_greenOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_morthagiOn",
+    "image": "scenery/shrineTransform_morthagiOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|morthagi",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_morthagi_leftArm",
+        "extraAspectTooltip|themePiece_morthagi_rightArm",
+        "extraAspectTooltip|themePiece_morthagi_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_morthagiOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_shadowOn",
+    "image": "scenery/shrineTransform_shadowOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|shadow",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_shadow_head",
+        "extraAspectTooltip|themePiece_shadow_leftArm",
+        "extraAspectTooltip|themePiece_shadow_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_shadowOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_skeletalOn",
+    "image": "scenery/shrineTransform_skeletalOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|skeletal",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_skeleton_head",
+        "extraAspectTooltip|themePiece_skeleton_leftArm",
+        "extraAspectTooltip|themePiece_skeleton_rightArm",
+        "extraAspectTooltip|themePiece_skeleton_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_skeletalOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_starOn",
+    "image": "scenery/shrineTransform_starOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|star",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_star_hairStars",
+        "extraAspectTooltip|themePiece_star_leftArm",
+        "extraAspectTooltip|themePiece_star_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_starOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_stormOn",
+    "image": "scenery/shrineTransform_stormOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|storm",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_storm_head",
+        "extraAspectTooltip|themePiece_storm_leftArm",
+        "extraAspectTooltip|themePiece_storm_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_stormOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_tailsOn",
+    "image": "scenery/shrineTransform_tailsOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|tails",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_fox_tail",
+        "extraAspectTooltip|themePiece_scorpion_tail",
+        "extraAspectTooltip|themePiece_skunk_tail"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_tailsOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_vineOn",
+    "image": "scenery/shrineTransform_vineOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|vine",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_vine_head",
+        "extraAspectTooltip|themePiece_vine_leftArm",
+        "extraAspectTooltip|themePiece_vine_rightArm",
+        "extraAspectTooltip|themePiece_vine_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_vineOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_wingsOn",
+    "image": "scenery/shrineTransform_wingsOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|wings",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_drauvenWings_wings",
+        "extraAspectTooltip|themePiece_hawk_wings",
+        "extraAspectTooltip|themePiece_mothWings_wings"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_wingsOff.png" }
+    ]
+},
+{
+    "id": "shrineTransformLab_wolfOn",
+    "image": "scenery/shrineTransform_wolfOn.png",
+    "tags": [],
+    "lengthRange": [ 2, 2.25 ],
+    "aspectRatio": 1.2632332,
+    "stretchAspectRatio": "[0.9,1.1]",
+    "submerge": "0",
+    "scale": "1",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegionLab|reward_theme|wolf",
+        "healthBarHeightOverride|1.4",
+        "nonInteractiveShowTooltip",
+        "extraReward",
+        "extraAspectTooltip|themePiece_wolf_head",
+        "extraAspectTooltip|themePiece_wolf_leftArm",
+        "extraAspectTooltip|themePiece_wolf_leftLeg"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/shrineTransform_wolfOff.png" }
+    ]
+},
+{
     "id": "treasureChestArtifactOn",
     "image": "scenery/treasureChestGearBigOn.png",
     "tags": [],
@@ -13,7 +710,7 @@
     "g": "[0.9,1.05]",
     "b": "[0.9,1.05]",
     "aspects": [
-        "rewardRegion|hero_creator_gainArtifact|NONE",
+        "rewardRegionLab|hero_creator_gainArtifact|NONE",
         "nonInteractiveShowTooltip",
         "bigReward",
         "gearChest"
@@ -35,7 +732,7 @@
 	"r": "[0.9,1.05]",
 	"g": "[0.9,1.05]",
 	"b": "[0.9,1.05]",
-	"aspects": [ "rewardRegion|hero_creator_gainArmor|NONE", "nonInteractiveShowTooltip", "gearChest" ],
+	"aspects": [ "rewardRegionLab|hero_creator_gainArmor|NONE", "nonInteractiveShowTooltip", "gearChest" ],
 	"states": [
 		{ "name": "empty", "image": "scenery/treasureChestGearMediumOff.png" }
 	]

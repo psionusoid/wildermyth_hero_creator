@@ -8,5 +8,25 @@
 	],
 	"effects": [ "hero_creator_gainArtifact" ],
 	"importance": -1
+},
+{
+	"modId": "hero_creator",
+	"id": "rewardRegionLab|_EFFECT_|_PARAM_",
+	"parameters": [
+		{ "replace": "_EFFECT_" },
+		{ "replace": "_PARAM_" }
+	],
+	"effects": [
+		"hero_creator_rewardRegionLab|_EFFECT_|_PARAM_",
+		"alsoRemove|peril_*",
+		"alsoRemove|peril_*",
+		"alsoRemove|peril_*",
+		"alsoRemove|peril_*",
+		"alsoRemove|rewardTimer",
+		"alsoRemove|rewardTimerInitial"
+	],
+	"boostType": "NEUTRAL",
+	"importance": 1,
+	"showInTooltip": true
 }
 ]

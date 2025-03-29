@@ -1,0 +1,33 @@
+{
+"id": "hero_creator_rewardRegionLab|_EFFECT_|_PARAM_",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_rewardRegionLab",
+	"modId": "hero_creator",
+	"author": "psionusoid",
+	"debug": true
+},
+"type": "REGION",
+"ability": { "priority": "1" },
+"targets": [
+	{ "template": "SELF" }
+],
+"outcomes": [
+	{
+		"class": "MapRegion",
+		"region": {
+			"id": "rewardRegion",
+			"tileFilter": "floorOrScenery",
+			"endMoveTriggerEffects": [ "regionTriggerRewardTimerExtra" ],
+			"spatialRelationship": {
+				"testAspectsOneOf": [
+					{ "id": "human" },
+					{ "id": "elthiarBaseAbilities" }
+				],
+				"otherAspect": "_EFFECT_|_PARAM_"
+			}
+		},
+		"aura": "1.6"
+	}
+]
+}
