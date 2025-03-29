@@ -182,6 +182,13 @@
 			"class": "DoAll",
 			"outcomes": [
 				{
+					"class": "Aspects",
+					"target": "hero",
+					"addAspects": [
+						{ "id": "hero_creator_combatModifier_buff_perception", "value": "1" }
+					]
+				},
+				{
 					"class": "Mission",
 					"goal": "story",
 					"combatants": [
@@ -205,6 +212,13 @@
 					"target": "npc",
 					"becomeAllyOf": "party",
 					"makeHero": true
+				},
+				{
+					"class": "Aspects",
+					"target": "npc",
+					"addAspects": [
+						{ "id": "hero_creator_combatModifier_buff_perception", "value": "1" }
+					]
 				},
 				{
 					"class": "Mission",

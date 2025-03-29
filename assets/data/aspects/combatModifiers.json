@@ -1,0 +1,8 @@
+[
+{
+	"modId": "hero_creator",
+	"id": "hero_creator_combatModifier_buff_perception",
+	"stats": { "PERCEPTION": 30 },
+	"boostType": "ADVANTAGE"
+}
+]
