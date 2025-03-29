@@ -58,29 +58,9 @@
 				"b": [ 43, 9 ]
 			},
 			{
-				"sceneryId": "shrineTransformLab_bearOn",
-				"a": [ 43, 8 ],
-				"b": [ 43, 8 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_bearOn",
-				"a": [ 43, 7 ],
-				"b": [ 43, 7 ]
-			},
-			{
 				"sceneryId": "shrineTransformLab_vineOn",
 				"a": [ 40, 9 ],
 				"b": [ 40, 9 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_vineOn",
-				"a": [ 40, 8 ],
-				"b": [ 40, 8 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_vineOn",
-				"a": [ 40, 7 ],
-				"b": [ 40, 7 ]
 			},
 			{
 				"sceneryId": "shrineTransformLab_starOn",
@@ -88,29 +68,9 @@
 				"b": [ 37, 9 ]
 			},
 			{
-				"sceneryId": "shrineTransformLab_starOn",
-				"a": [ 37, 8 ],
-				"b": [ 37, 8 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_starOn",
-				"a": [ 37, 7 ],
-				"b": [ 37, 7 ]
-			},
-			{
 				"sceneryId": "shrineTransformLab_foothillOn",
 				"a": [ 34, 9 ],
 				"b": [ 34, 9 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_foothillOn",
-				"a": [ 34, 8 ],
-				"b": [ 34, 8 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_foothillOn",
-				"a": [ 34, 7 ],
-				"b": [ 34, 7 ]
 			},
 			{
 				"sceneryId": "shrineTransformLab_crowOn",
@@ -118,29 +78,9 @@
 				"b": [ 31, 9 ]
 			},
 			{
-				"sceneryId": "shrineTransformLab_crowOn",
-				"a": [ 31, 8 ],
-				"b": [ 31, 8 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_crowOn",
-				"a": [ 31, 7 ],
-				"b": [ 31, 7 ]
-			},
-			{
 				"sceneryId": "shrineTransformLab_gemOn",
 				"a": [ 28, 9 ],
 				"b": [ 28, 9 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_gemOn",
-				"a": [ 28, 8 ],
-				"b": [ 28, 8 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_gemOn",
-				"a": [ 28, 7 ],
-				"b": [ 28, 7 ]
 			},
 			{
 				"sceneryId": "shrineTransformLab_treeOn",
@@ -148,29 +88,9 @@
 				"b": [ 25, 9 ]
 			},
 			{
-				"sceneryId": "shrineTransformLab_treeOn",
-				"a": [ 25, 8 ],
-				"b": [ 25, 8 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_treeOn",
-				"a": [ 25, 7 ],
-				"b": [ 25, 7 ]
-			},
-			{
 				"sceneryId": "shrineTransformLab_fireOn",
 				"a": [ 43, 12 ],
 				"b": [ 43, 12 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_fireOn",
-				"a": [ 43, 13 ],
-				"b": [ 43, 13 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_fireOn",
-				"a": [ 43, 14 ],
-				"b": [ 43, 14 ]
 			},
 			{
 				"sceneryId": "shrineTransformLab_frogOn",
@@ -178,29 +98,9 @@
 				"b": [ 40, 12 ]
 			},
 			{
-				"sceneryId": "shrineTransformLab_frogOn",
-				"a": [ 40, 13 ],
-				"b": [ 40, 13 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_frogOn",
-				"a": [ 40, 14 ],
-				"b": [ 40, 14 ]
-			},
-			{
 				"sceneryId": "shrineTransformLab_morthagiOn",
 				"a": [ 37, 12 ],
 				"b": [ 37, 12 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_morthagiOn",
-				"a": [ 37, 13 ],
-				"b": [ 37, 13 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_morthagiOn",
-				"a": [ 37, 14 ],
-				"b": [ 37, 14 ]
 			},
 			{
 				"sceneryId": "shrineTransformLab_shadowOn",
@@ -208,29 +108,9 @@
 				"b": [ 34, 12 ]
 			},
 			{
-				"sceneryId": "shrineTransformLab_shadowOn",
-				"a": [ 34, 13 ],
-				"b": [ 34, 13 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_shadowOn",
-				"a": [ 34, 14 ],
-				"b": [ 34, 14 ]
-			},
-			{
 				"sceneryId": "shrineTransformLab_skeletalOn",
 				"a": [ 31, 12 ],
 				"b": [ 31, 12 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_skeletalOn",
-				"a": [ 31, 13 ],
-				"b": [ 31, 13 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_skeletalOn",
-				"a": [ 31, 14 ],
-				"b": [ 31, 14 ]
 			},
 			{
 				"sceneryId": "shrineTransformLab_stormOn",
@@ -238,249 +118,79 @@
 				"b": [ 28, 12 ]
 			},
 			{
-				"sceneryId": "shrineTransformLab_stormOn",
-				"a": [ 28, 13 ],
-				"b": [ 28, 13 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_stormOn",
-				"a": [ 28, 14 ],
-				"b": [ 28, 14 ]
-			},
-			{
 				"sceneryId": "shrineTransformLab_greenOn",
 				"a": [ 25, 12 ],
 				"b": [ 25, 12 ]
 			},
 			{
-				"sceneryId": "shrineTransformLab_greenOn",
-				"a": [ 25, 13 ],
-				"b": [ 25, 13 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_greenOn",
-				"a": [ 25, 14 ],
-				"b": [ 25, 14 ]
-			},
-			{
 				"sceneryId": "shrineTransformLab_wolfOn",
-				"a": [ 43, 17 ],
-				"b": [ 43, 17 ]
+				"a": [ 43, 15 ],
+				"b": [ 43, 15 ]
 			},
 			{
-				"sceneryId": "shrineTransformLab_wolfOn",
+				"sceneryId": "shrineTransformLab_tailsOn",
+				"a": [ 40, 15 ],
+				"b": [ 40, 15 ]
+			},
+			{
+				"sceneryId": "shrineTransformLab_wingsOn",
+				"a": [ 37, 15 ],
+				"b": [ 37, 15 ]
+			},
+			{
+				"sceneryId": "cagePetLab_catBlack",
+				"a": [ 34, 15 ],
+				"b": [ 34, 15 ]
+			},
+			{
+				"sceneryId": "cagePetLab_critter",
+				"a": [ 31, 15 ],
+				"b": [ 31, 15 ]
+			},
+			{
+				"sceneryId": "cagePetLab_cub",
+				"a": [ 28, 15 ],
+				"b": [ 28, 15 ]
+			},
+			{
+				"sceneryId": "cagePetLab_birdDrauven",
+				"a": [ 25, 15 ],
+				"b": [ 25, 15 ]
+			},
+			{
+				"sceneryId": "cagePetLab_duck",
 				"a": [ 43, 18 ],
 				"b": [ 43, 18 ]
 			},
 			{
-				"sceneryId": "shrineTransformLab_wolfOn",
-				"a": [ 43, 19 ],
-				"b": [ 43, 19 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_tailsOn",
-				"a": [ 40, 17 ],
-				"b": [ 40, 17 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_tailsOn",
+				"sceneryId": "cagePetLab_fireChicken",
 				"a": [ 40, 18 ],
 				"b": [ 40, 18 ]
 			},
 			{
-				"sceneryId": "shrineTransformLab_tailsOn",
-				"a": [ 40, 19 ],
-				"b": [ 40, 19 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_wingsOn",
-				"a": [ 37, 17 ],
-				"b": [ 37, 17 ]
-			},
-			{
-				"sceneryId": "shrineTransformLab_wingsOn",
+				"sceneryId": "cagePetLab_meteor",
 				"a": [ 37, 18 ],
 				"b": [ 37, 18 ]
 			},
 			{
-				"sceneryId": "shrineTransformLab_wingsOn",
-				"a": [ 37, 19 ],
-				"b": [ 37, 19 ]
-			},
-			{
-				"sceneryId": "cagePetLab_catBlack",
-				"a": [ 34, 17 ],
-				"b": [ 34, 17 ]
-			},
-			{
-				"sceneryId": "cagePetLab_catBlack",
+				"sceneryId": "cagePetLab_pinecone",
 				"a": [ 34, 18 ],
 				"b": [ 34, 18 ]
 			},
 			{
-				"sceneryId": "cagePetLab_catBlack",
-				"a": [ 34, 19 ],
-				"b": [ 34, 19 ]
-			},
-			{
-				"sceneryId": "cagePetLab_critter",
-				"a": [ 31, 17 ],
-				"b": [ 31, 17 ]
-			},
-			{
-				"sceneryId": "cagePetLab_critter",
+				"sceneryId": "cagePetLab_rabbit",
 				"a": [ 31, 18 ],
 				"b": [ 31, 18 ]
 			},
 			{
-				"sceneryId": "cagePetLab_critter",
-				"a": [ 31, 19 ],
-				"b": [ 31, 19 ]
-			},
-			{
-				"sceneryId": "cagePetLab_cub",
-				"a": [ 28, 17 ],
-				"b": [ 28, 17 ]
-			},
-			{
-				"sceneryId": "cagePetLab_cub",
+				"sceneryId": "cagePetLab_rat",
 				"a": [ 28, 18 ],
 				"b": [ 28, 18 ]
 			},
 			{
-				"sceneryId": "cagePetLab_cub",
-				"a": [ 28, 19 ],
-				"b": [ 28, 19 ]
-			},
-			{
-				"sceneryId": "cagePetLab_birdDrauven",
-				"a": [ 25, 17 ],
-				"b": [ 25, 17 ]
-			},
-			{
-				"sceneryId": "cagePetLab_birdDrauven",
+				"sceneryId": "cagePetLab_catShadow",
 				"a": [ 25, 18 ],
 				"b": [ 25, 18 ]
-			},
-			{
-				"sceneryId": "cagePetLab_birdDrauven",
-				"a": [ 25, 19 ],
-				"b": [ 25, 19 ]
-			},
-			{
-				"sceneryId": "cagePetLab_duck",
-				"a": [ 43, 22 ],
-				"b": [ 43, 22 ]
-			},
-			{
-				"sceneryId": "cagePetLab_duck",
-				"a": [ 43, 23 ],
-				"b": [ 43, 23 ]
-			},
-			{
-				"sceneryId": "cagePetLab_duck",
-				"a": [ 43, 24 ],
-				"b": [ 43, 24 ]
-			},
-			{
-				"sceneryId": "cagePetLab_fireChicken",
-				"a": [ 40, 22 ],
-				"b": [ 40, 22 ]
-			},
-			{
-				"sceneryId": "cagePetLab_fireChicken",
-				"a": [ 40, 23 ],
-				"b": [ 40, 23 ]
-			},
-			{
-				"sceneryId": "cagePetLab_fireChicken",
-				"a": [ 40, 24 ],
-				"b": [ 40, 24 ]
-			},
-			{
-				"sceneryId": "cagePetLab_meteor",
-				"a": [ 37, 22 ],
-				"b": [ 37, 22 ]
-			},
-			{
-				"sceneryId": "cagePetLab_meteor",
-				"a": [ 37, 23 ],
-				"b": [ 37, 23 ]
-			},
-			{
-				"sceneryId": "cagePetLab_meteor",
-				"a": [ 37, 24 ],
-				"b": [ 37, 24 ]
-			},
-			{
-				"sceneryId": "cagePetLab_pinecone",
-				"a": [ 34, 22 ],
-				"b": [ 34, 22 ]
-			},
-			{
-				"sceneryId": "cagePetLab_pinecone",
-				"a": [ 34, 23 ],
-				"b": [ 34, 23 ]
-			},
-			{
-				"sceneryId": "cagePetLab_pinecone",
-				"a": [ 34, 24 ],
-				"b": [ 34, 24 ]
-			},
-			{
-				"sceneryId": "cagePetLab_rabbit",
-				"a": [ 31, 22 ],
-				"b": [ 31, 22 ]
-			},
-			{
-				"sceneryId": "cagePetLab_rabbit",
-				"a": [ 31, 23 ],
-				"b": [ 31, 23 ]
-			},
-			{
-				"sceneryId": "cagePetLab_rabbit",
-				"a": [ 31, 24 ],
-				"b": [ 31, 24 ]
-			},
-			{
-				"sceneryId": "cagePetLab_rat",
-				"a": [ 28, 22 ],
-				"b": [ 28, 22 ]
-			},
-			{
-				"sceneryId": "cagePetLab_rat",
-				"a": [ 28, 23 ],
-				"b": [ 28, 23 ]
-			},
-			{
-				"sceneryId": "cagePetLab_rat",
-				"a": [ 28, 24 ],
-				"b": [ 28, 24 ]
-			},
-			{
-				"sceneryId": "cagePetLab_catShadow",
-				"a": [ 25, 22 ],
-				"b": [ 25, 22 ]
-			},
-			{
-				"sceneryId": "cagePetLab_catShadow",
-				"a": [ 25, 23 ],
-				"b": [ 25, 23 ]
-			},
-			{
-				"sceneryId": "cagePetLab_catShadow",
-				"a": [ 25, 24 ],
-				"b": [ 25, 24 ]
-			},
-			{
-				"sceneryId": "shrineAbilityOn",
-				"a": [ 21, 7 ],
-				"b": [ 21, 7 ]
-			},
-			{
-				"sceneryId": "shrineAbilityOn",
-				"a": [ 21, 8 ],
-				"b": [ 21, 8 ]
 			},
 			{
 				"sceneryId": "shrineAbilityOn",
@@ -496,6 +206,11 @@
 				"sceneryId": "shrineAbilityOn",
 				"a": [ 21, 11 ],
 				"b": [ 21, 11 ]
+			},
+			{
+				"sceneryId": "shrineAbilityOn",
+				"a": [ 21, 12 ],
+				"b": [ 21, 12 ]
 			}
 		],
 		"offsetX": 30,
