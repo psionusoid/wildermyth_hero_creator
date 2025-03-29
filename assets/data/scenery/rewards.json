@@ -19,7 +19,7 @@
         "extraAspectTooltip|themePiece_petCritter_critter"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+        { "name": "empty", "image": "scenery/cagePet_critter.png" }
     ]
 },
 {
@@ -42,7 +42,7 @@
         "extraAspectTooltip|themePiece_petBirdDrauven_birdDrauven"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+        { "name": "empty", "image": "scenery/cagePet_birdDrauven.png" }
     ]
 },
 {
@@ -65,7 +65,7 @@
         "extraAspectTooltip|petCatBlack_shySwipes"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+        { "name": "empty", "image": "scenery/cagePet_catBlack.png" }
     ]
 },
 {
@@ -88,7 +88,7 @@
         "extraAspectTooltip|themePiece_petCatShadow_catShadow"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+        { "name": "empty", "image": "scenery/cagePet_catShadow.png" }
     ]
 },
 {
@@ -111,7 +111,7 @@
         "extraAspectTooltip|themePiece_petCub_cub"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+        { "name": "empty", "image": "scenery/cagePet_cub.png" }
     ]
 },
 {
@@ -134,7 +134,7 @@
         "extraAspectTooltip|themePiece_petDuck_duck"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+        { "name": "empty", "image": "scenery/cagePet_duck.png" }
     ]
 },
 {
@@ -157,7 +157,7 @@
         "extraAspectTooltip|themePiece_petFireChicken_fireChicken"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+        { "name": "empty", "image": "scenery/cagePet_fireChicken.png" }
     ]
 },
 {
@@ -180,7 +180,7 @@
         "extraAspectTooltip|themePiece_petMeteor_meteor"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+        { "name": "empty", "image": "scenery/cagePet_meteor.png" }
     ]
 },
 {
@@ -203,7 +203,7 @@
         "extraAspectTooltip|themePiece_petPinecone_pinecone"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+        { "name": "empty", "image": "scenery/cagePet_pinecone.png" }
     ]
 },
 {
@@ -226,7 +226,7 @@
         "extraAspectTooltip|themePiece_petRabbit_rabbit"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+        { "name": "empty", "image": "scenery/cagePet_rabbit.png" }
     ]
 },
 {
@@ -249,7 +249,7 @@
         "extraAspectTooltip|themePiece_petRat_oneRat"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/cagePet_empty.png" }
+        { "name": "empty", "image": "scenery/cagePet_rat.png" }
     ]
 },
 {
@@ -276,7 +276,7 @@
         "extraAspectTooltip|themePiece_crow_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_crowOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_crowOn.png" }
     ]
 },
 {
@@ -302,7 +302,7 @@
         "extraAspectTooltip|themePiece_tree_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_treeOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_treeOn.png" }
     ]
 },
 {
@@ -328,7 +328,7 @@
         "extraAspectTooltip|themePiece_bear_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_bearOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_bearOn.png" }
     ]
 },
 {
@@ -354,7 +354,7 @@
         "extraAspectTooltip|themePiece_fire_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_fireOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_fireOn.png" }
     ]
 },
 {
@@ -379,7 +379,7 @@
         "extraAspectTooltip|themePiece_foothill_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_foothillOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_foothillOn.png" }
     ]
 },
 {
@@ -403,7 +403,7 @@
         "extraAspectTooltip|themePiece_frog_head"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_frogOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_frogOn.png" }
     ]
 },
 {
@@ -430,7 +430,7 @@
         "extraAspectTooltip|themePiece_gem_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_gemOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_gemOn.png" }
     ]
 },
 {
@@ -457,7 +457,7 @@
         "extraAspectTooltip|themePiece_green_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_greenOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_greenOn.png" }
     ]
 },
 {
@@ -483,7 +483,7 @@
         "extraAspectTooltip|themePiece_morthagi_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_morthagiOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_morthagiOn.png" }
     ]
 },
 {
@@ -509,7 +509,7 @@
         "extraAspectTooltip|themePiece_shadow_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_shadowOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_shadowOn.png" }
     ]
 },
 {
@@ -536,7 +536,7 @@
         "extraAspectTooltip|themePiece_skeleton_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_skeletalOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_skeletalOn.png" }
     ]
 },
 {
@@ -562,7 +562,7 @@
         "extraAspectTooltip|themePiece_star_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_starOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_starOn.png" }
     ]
 },
 {
@@ -588,7 +588,7 @@
         "extraAspectTooltip|themePiece_storm_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_stormOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_stormOn.png" }
     ]
 },
 {
@@ -614,7 +614,7 @@
         "extraAspectTooltip|themePiece_skunk_tail"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_tailsOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_tailsOn.png" }
     ]
 },
 {
@@ -641,7 +641,7 @@
         "extraAspectTooltip|themePiece_vine_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_vineOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_vineOn.png" }
     ]
 },
 {
@@ -667,7 +667,7 @@
         "extraAspectTooltip|themePiece_mothWings_wings"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_wingsOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_wingsOn.png" }
     ]
 },
 {
@@ -693,7 +693,7 @@
         "extraAspectTooltip|themePiece_wolf_leftLeg"
     ],
     "states": [
-        { "name": "empty", "image": "scenery/shrineTransform_wolfOff.png" }
+        { "name": "empty", "image": "scenery/shrineTransform_wolfOn.png" }
     ]
 },
 {
