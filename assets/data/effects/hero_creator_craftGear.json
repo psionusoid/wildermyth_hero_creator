@@ -1,0 +1,23 @@
+{
+"id": "hero_creator_craftGear",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_craftGear",
+	"modId": "hero_creator",
+	"author": "psionusoid",
+	"tags": [ "okToMarkDone" ],
+	"debug": true
+},
+"type": "ABILITY",
+"verb": "MANEUVER",
+"ability": { "icon": "forge", "category": "research", "priority": "1" },
+"targets": [
+	{
+		"template": "SELF",
+		"aspectsOneOf": [ "human", "elthiarBaseAbilities" ]
+	}
+],
+"outcomes": [
+	{ "class": "OpenCraftDialog" }
+]
+}

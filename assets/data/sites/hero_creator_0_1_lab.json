@@ -211,6 +211,16 @@
 				"sceneryId": "shrineAbilityOn",
 				"a": [ 21, 12 ],
 				"b": [ 21, 12 ]
+			},
+			{
+				"sceneryId": "treasureChestArtifactOn",
+				"a": [ 21, 15 ],
+				"b": [ 21, 15 ]
+			},
+			{
+				"sceneryId": "shrineCraftLabOn",
+				"a": [ 21, 18 ],
+				"b": [ 21, 18 ]
 			}
 		],
 		"offsetX": 30,
