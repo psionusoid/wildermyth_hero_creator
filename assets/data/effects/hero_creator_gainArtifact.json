@@ -1,0 +1,31 @@
+{
+"id": "hero_creator_gainArtifact",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_gainArtifact",
+	"modId": "hero_creator",
+	"author": "psionusoid",
+	"tags": [ "okToMarkDone" ],
+	"debug": true
+},
+"type": "ABILITY",
+"verb": "MANEUVER",
+"ability": { "icon": "rewardChest", "category": "research", "priority": "1" },
+"targets": [
+	{
+		"template": "SELF",
+		"aspectsOneOf": [ "human", "elthiarBaseAbilities" ]
+	}
+],
+"outcomes": [
+	{
+		"class": "UpgradeGear",
+		"query": {
+			"allowArmor": false,
+			"allowAugment": false,
+			"allowOffHand": false,
+			"artifact": true
+		}
+	}
+]
+}

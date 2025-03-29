@@ -1,0 +1,37 @@
+{
+"id": "hero_creator_gainArmor",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_gainArmor",
+	"modId": "hero_creator",
+	"author": "psionusoid",
+	"tags": [ "okToMarkDone" ],
+	"debug": true
+},
+"type": "ABILITY",
+"verb": "MANEUVER",
+"ability": { "icon": "rewardChest", "category": "research", "priority": "1" },
+"targets": [
+	{
+		"template": "SELF",
+		"aspectsOneOf": [ "human", "elthiarBaseAbilities" ]
+	},
+	{
+		"template": "COMPANY",
+		"STUB": "Needed for dynamic resource granting based on chapterNumber"
+	},
+	{ "role": "volunteer", "template": "ANY", "matchSpecial": "parameter1" },
+	{
+		"role": "hero",
+		"template": "ANY",
+		"type": "UNIT",
+		"fromRoles": [ "self" ]
+	}
+],
+"outcomes": [
+	{
+		"class": "UpgradeGear",
+		"query": { "allowWeapon": false, "allowAugment": false, "allowOffHand": false }
+	}
+]
+}

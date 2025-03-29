@@ -1,0 +1,12 @@
+[
+{
+	"modId": "hero_creator",
+	"id": "hero_creator_gainArtifact|_NONE_|_ENTITY_",
+	"parameters": [
+		{},
+		{ "replace": "_ENTITY_", "isEntity": true }
+	],
+	"effects": [ "hero_creator_gainArtifact" ],
+	"importance": -1
+}
+]

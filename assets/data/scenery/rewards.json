@@ -1,0 +1,43 @@
+[
+{
+    "id": "treasureChestArtifactOn",
+    "image": "scenery/treasureChestGearBigOn.png",
+    "tags": [],
+    "lengthRange": [ 1, 1.25 ],
+    "aspectRatio": 1.2676057,
+    "stretchAspectRatio": "1",
+    "submerge": "0",
+    "scale": "1.4",
+    "thickness": "0.025",
+    "r": "[0.9,1.05]",
+    "g": "[0.9,1.05]",
+    "b": "[0.9,1.05]",
+    "aspects": [
+        "rewardRegion|hero_creator_gainArtifact|NONE",
+        "nonInteractiveShowTooltip",
+        "bigReward",
+        "gearChest"
+    ],
+    "states": [
+        { "name": "empty", "image": "scenery/treasureChestGearBigOff.png" }
+    ]
+},
+{
+	"id": "treasureChestArmorOn",
+	"image": "scenery/treasureChestGearMediumOn.png",
+	"tags": [],
+	"lengthRange": [ 1, 1.25 ],
+	"aspectRatio": 1.2831858,
+	"stretchAspectRatio": "1",
+	"submerge": "0",
+	"scale": "1.2",
+	"thickness": "0.025",
+	"r": "[0.9,1.05]",
+	"g": "[0.9,1.05]",
+	"b": "[0.9,1.05]",
+	"aspects": [ "rewardRegion|hero_creator_gainArmor|NONE", "nonInteractiveShowTooltip", "gearChest" ],
+	"states": [
+		{ "name": "empty", "image": "scenery/treasureChestGearMediumOff.png" }
+	]
+}
+]
