@@ -213,6 +213,7 @@
 					"becomeAllyOf": "party",
 					"makeHero": true
 				},
+				{ "class": "ChangeControl", "target": "hero", "removeHero": true },
 				{
 					"class": "Aspects",
 					"target": "npc",
