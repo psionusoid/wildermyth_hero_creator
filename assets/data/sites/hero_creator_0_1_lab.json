@@ -218,9 +218,14 @@
 				"b": [ 21, 15 ]
 			},
 			{
-				"sceneryId": "shrineCraftLabOn",
-				"a": [ 21, 18 ],
-				"b": [ 21, 18 ]
+				"sceneryId": "treasureChestArmorOn",
+				"a": [ 21, 16 ],
+				"b": [ 21, 16 ]
+			},
+			{
+				"sceneryId": "shrineGearUpgradeLabOn",
+				"a": [ 21, 17 ],
+				"b": [ 21, 17 ]
 			}
 		],
 		"offsetX": 30,
