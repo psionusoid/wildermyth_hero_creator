@@ -15,17 +15,6 @@
 	{
 		"template": "SELF",
 		"aspectsOneOf": [ "human", "elthiarBaseAbilities" ]
-	},
-	{
-		"template": "COMPANY",
-		"STUB": "Needed for dynamic resource granting based on chapterNumber"
-	},
-	{ "role": "volunteer", "template": "ANY", "matchSpecial": "parameter1" },
-	{
-		"role": "hero",
-		"template": "ANY",
-		"type": "UNIT",
-		"fromRoles": [ "self" ]
 	}
 ],
 "outcomes": [
