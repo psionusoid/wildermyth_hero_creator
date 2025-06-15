@@ -31,6 +31,16 @@
 },
 {
 	"modId": "hero_creator",
+	"id": "hero_creator_upgradeGear|_NONE_|_ENTITY_",
+	"parameters": [
+		{},
+		{ "replace": "_ENTITY_", "isEntity": true }
+	],
+	"effects": [ "hero_creator_upgradeGear" ],
+	"importance": -1
+},
+{
+	"modId": "hero_creator",
 	"id": "rewardRegionLab|_EFFECT_|_PARAM_",
 	"parameters": [
 		{ "replace": "_EFFECT_" },

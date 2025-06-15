@@ -1,0 +1,68 @@
+{
+"id": "hero_creator_upgradeGear",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_upgradeGear",
+	"modId": "hero_creator",
+	"author": "psionusoid",
+	"tags": [ "okToMarkDone" ]
+},
+"type": "ABILITY",
+"verb": "MANEUVER",
+"ability": {
+	"icon": "rewardUpgrade",
+	"category": "research",
+	"priority": "1",
+	"musicOverride": ""
+},
+"targets": [
+	{
+		"template": "SELF",
+		"aspects": [ "alive", "SELF", "human" ]
+	},
+	{
+		"role": "hero",
+		"template": "ANY",
+		"type": "HERO",
+		"fromRoles": [ "self" ]
+	},
+	{
+		"template": "WEAPON",
+		"choose": "ANY",
+		"aspects": [ "weapon", "MAIN_HAND" ],
+		"test": "LESS_THAN",
+		"a": "ITEM_TIER",
+		"b": "3"
+	},
+	{
+		"role": "volunteer2",
+		"template": "ITEM",
+		"choose": "ANY",
+		"aspects": [ "weapon", "INACTIVE_ITEM" ],
+		"test": "LESS_THAN",
+		"a": "ITEM_TIER",
+		"b": "3"
+	},
+	{
+		"role": "volunteer3",
+		"template": "ITEM",
+		"STUB": "Armor",
+		"choose": "ANY",
+		"aspects": [ "armor", "EQUIPPED_ITEM" ],
+		"test": "LESS_THAN",
+		"a": "ITEM_TIER",
+		"b": "2"
+	},
+	{
+		"role": "item",
+		"template": "ANY",
+		"STUB": "At least one item must exist",
+		"choose": "ALL",
+		"showAnyway": true,
+		"fromRoles": [ "weapon", "volunteer2", "volunteer3" ]
+	}
+],
+"outcomes": [
+	{ "class": "Branch", "branchEvent": "hero_creator_upgradeGear_branch" }
+]
+}

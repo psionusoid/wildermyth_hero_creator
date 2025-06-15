@@ -1,0 +1,354 @@
+{
+"id": "hero_creator_upgradeGear_branch",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_upgradeGear_branch",
+	"modId": "hero_creator",
+	"author": "psionusoid",
+	"tags": [ "okToMarkDone" ]
+},
+"type": "BRANCH",
+"verb": "MANEUVER",
+"ability": {
+	"icon": "rewardUpgrade",
+	"category": "research",
+	"priority": "1",
+	"musicOverride": ""
+},
+"targets": [
+	{ "template": "EVENT" },
+	{ "role": "hero", "template": "ANY", "type": "HERO", "injectedRole": "hero" },
+	{
+		"role": "weapon",
+		"template": "ITEM",
+		"choose": "ANY",
+		"injectedRole": "weapon"
+	},
+	{
+		"role": "volunteer2",
+		"template": "ITEM",
+		"choose": "ANY",
+		"injectedRole": "volunteer2"
+	},
+	{
+		"role": "volunteer3",
+		"template": "ITEM",
+		"STUB": "Armor",
+		"choose": "ANY",
+		"injectedRole": "volunteer3"
+	},
+	{
+		"role": "item",
+		"template": "ANY",
+		"STUB": "At least one item must exist",
+		"choose": "ALL",
+		"showAnyway": true,
+		"fromRoles": [ "weapon", "volunteer2", "volunteer3" ]
+	},
+	{
+		"template": "CHOICE",
+		"promptScript": [
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"bgAuto": "atSite",
+					"actorSlots": [
+						{
+							"role": "hero",
+							"form": "frame-interested",
+							"anchor": { "x": 0.42, "y": 0.684 },
+							"size": 0.7,
+							"drawDepth": 1.625,
+							"head": { "rotate": 10.9, "scaleY": 1 },
+							"foot": { "rotate": -3.073 },
+							"color": { "r": "0.85877192", "g": "0.81629717", "b": "0.53596389", "a": "1" },
+							"colorFilter": {}
+						},
+						{
+							"assetSpec": "asset:sites/scenery/shrineUpgradeGearOn.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.694, "y": 0.289 },
+							"size": 0.2548,
+							"nameTag": "none"
+						},
+						{
+							"assetSpec": "comicBg:comicBG_campfire.jpg",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.468, "y": 0.48 },
+							"size": 0.3053,
+							"nameTag": "none",
+							"color": { "r": "0.68421096", "g": "0.68421096", "b": "0.68421096", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:smokeCloud.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.297, "y": -0.274 },
+							"size": 0.8379,
+							"drawDepth": 1,
+							"nameTag": "none",
+							"foot": { "rotate": 0 },
+							"color": { "r": "1", "g": "0.85941744", "b": "0.63157678", "a": "0.66885912" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "hero_creator_upgradeGear_branch",
+							"textKey": "~01~prompt~panel_001~1_hero",
+							"style": "narration",
+							"pointerOwner": "hero",
+							"padXFraction": 0.123,
+							"padYFraction": 0.089,
+							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "hero_creator_upgradeGear_branch",
+							"textKey": "~01~prompt~panel_001~2_narration",
+							"style": "narration",
+							"padXFraction": 0.337,
+							"padYFraction": 0.299,
+							"shrinkToFitText": true
+						}
+					]
+				}
+			}
+		],
+		"options": [
+			{
+				"id": "one",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"actorSlots": [
+								{
+									"role": "hero",
+									"form": "frame-happy",
+									"equipment": { "mode": "leaveEquipment" },
+									"focus": "middle",
+									"anchor": { "x": 0.396, "y": 0.638 },
+									"size": 0.6347,
+									"nameTag": "none",
+									"head": { "rotate": -37.914, "scaleY": 1 },
+									"foot": { "rotate": 0.308 },
+									"color": { "r": "0.85877192", "g": "0.81629717", "b": "0.53596389", "a": "1" }
+								},
+								{
+									"assetSpec": "comicBg:comicBG_campfire.jpg",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.588, "y": 0.286 },
+									"size": 0.462,
+									"nameTag": "none",
+									"color": { "r": "0.68421096", "g": "0.68421096", "b": "0.68421096", "a": "1" }
+								},
+								{
+									"assetSpec": "comic:smokeCloud.png",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.495, "y": -0.108 },
+									"size": 0.703,
+									"drawDepth": 1,
+									"nameTag": "none",
+									"color": { "r": "1", "g": "0.85941744", "b": "0.63157678", "a": "0.66885912" }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "hero_creator_upgradeGear_branch",
+									"textKey": "~02~choice_one~panel_001~1_hero",
+									"style": "thought",
+									"pointerOwner": "hero",
+									"location": "topRight",
+									"padXFraction": 0.168,
+									"padYFraction": 0.017,
+									"widthFraction": 0.8173913,
+									"shrinkToFitText": true,
+									"pointerAdjust": { "pointerOrientH": "onLeft" }
+								},
+								{
+									"textSourceFile": "hero_creator_upgradeGear_branch",
+									"textKey": "~02~choice_one~panel_001~2_self",
+									"style": "darken",
+									"pointerOwner": "self",
+									"location": "bottomLeft",
+									"padXFraction": 0.03
+								}
+							]
+						}
+					}
+				],
+				"ifTargetIsPresent": "weapon"
+			},
+			{
+				"id": "two",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"actorSlots": [
+								{
+									"role": "hero",
+									"form": "frame-joke",
+									"equipment": { "mode": "swapActive" },
+									"focus": "middle",
+									"anchor": { "x": 0.452, "y": 0.599 },
+									"size": 0.6598,
+									"nameTag": "none",
+									"head": { "rotate": -22.332 },
+									"foot": { "rotate": 0.996 },
+									"color": { "r": "0.85877192", "g": "0.81629717", "b": "0.53596389", "a": "1" }
+								},
+								{
+									"assetSpec": "comicBg:comicBG_campfire.jpg",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.588, "y": 0.286 },
+									"size": 0.462,
+									"nameTag": "none",
+									"foot": { "rotate": 0 },
+									"color": { "r": "0.68421096", "g": "0.68421096", "b": "0.68421096", "a": "1" }
+								},
+								{
+									"assetSpec": "comic:smokeCloud.png",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.617, "y": -0.257 },
+									"size": 0.703,
+									"drawDepth": 1,
+									"nameTag": "none",
+									"color": { "r": "1", "g": "0.85941744", "b": "0.63157678", "a": "0.66885912" }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "hero_creator_upgradeGear_branch",
+									"textKey": "~03~choice_two~panel_001~1_hero",
+									"style": "thought",
+									"pointerOwner": "hero",
+									"location": "topRight",
+									"padXFraction": 0.052,
+									"padYFraction": 0.011,
+									"widthFraction": 0.6811596,
+									"shrinkToFitText": true
+								},
+								{
+									"textSourceFile": "hero_creator_upgradeGear_branch",
+									"textKey": "~03~choice_two~panel_001~2_self",
+									"style": "darken",
+									"pointerOwner": "self",
+									"location": "bottomLeft",
+									"padXFraction": 0.03
+								}
+							]
+						}
+					}
+				],
+				"ifTargetIsPresent": "volunteer2"
+			},
+			{
+				"id": "three",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"actorSlots": [
+								{
+									"role": "hero",
+									"form": "frame-talk",
+									"equipment": {},
+									"focus": "middle",
+									"anchor": { "x": 0.564, "y": 0.515 },
+									"size": 0.6598,
+									"nameTag": "none",
+									"head": { "rotate": -2.453 },
+									"foot": { "rotate": 0.996 },
+									"color": { "r": "0.85877192", "g": "0.81629717", "b": "0.53596389", "a": "1" }
+								},
+								{
+									"assetSpec": "comicBg:comicBG_campfire.jpg",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.588, "y": 0.286 },
+									"size": 0.462,
+									"nameTag": "none",
+									"foot": { "rotate": 0 },
+									"color": { "r": "0.68421096", "g": "0.68421096", "b": "0.68421096", "a": "1" }
+								},
+								{
+									"assetSpec": "comic:smokeCloud.png",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.617, "y": -0.257 },
+									"size": 0.703,
+									"drawDepth": 1,
+									"nameTag": "none",
+									"color": { "r": "1", "g": "0.85941744", "b": "0.63157678", "a": "0.66885912" }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "hero_creator_upgradeGear_branch",
+									"textKey": "~04~choice_three~panel_001~1_hero",
+									"style": "thought",
+									"pointerOwner": "hero",
+									"location": "topRight",
+									"padXFraction": 0.052,
+									"padYFraction": 0.011,
+									"widthFraction": 0.6811596,
+									"shrinkToFitText": true
+								},
+								{
+									"textSourceFile": "hero_creator_upgradeGear_branch",
+									"textKey": "~04~choice_three~panel_001~2_self",
+									"style": "darken",
+									"pointerOwner": "self",
+									"location": "bottomLeft",
+									"padXFraction": 0.03
+								}
+							]
+						}
+					}
+				],
+				"ifTargetIsPresent": "volunteer3"
+			}
+		]
+	}
+],
+"outcomes": [
+	{
+		"class": "IfPlayerChose",
+		"ifPlayerChose": "one",
+		"then": {
+			"class": "UpgradeGear",
+			"query": {},
+			"restrictTo": [ "hero" ],
+			"upgradeWeapon": "weapon"
+		}
+	},
+	{
+		"class": "IfPlayerChose",
+		"ifPlayerChose": "two",
+		"then": {
+			"class": "UpgradeGear",
+			"query": {},
+			"restrictTo": [ "hero" ],
+			"upgradeWeapon": "volunteer2"
+		}
+	},
+	{
+		"class": "IfPlayerChose",
+		"ifPlayerChose": "three",
+		"then": {
+			"class": "UpgradeGear",
+			"query": {},
+			"restrictTo": [ "hero" ],
+			"upgradeWeapon": "volunteer3"
+		}
+	}
+]
+}

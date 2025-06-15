@@ -738,6 +738,28 @@
 	]
 },
 {
+	"id": "shrineGearUpgradeLabOn",
+	"image": "scenery/shrineUpgradeGearOn.png",
+	"tags": [],
+	"lengthRange": [ 2, 2.25 ],
+	"aspectRatio": 0.8288889,
+	"stretchAspectRatio": "[0.9,1.1]",
+	"submerge": "0",
+	"scale": "1",
+	"thickness": "0.025",
+	"r": "[0.9,1.05]",
+	"g": "[0.9,1.05]",
+	"b": "[0.9,1.05]",
+	"aspects": [
+		"rewardRegionLab|hero_creator_upgradeGear|none",
+		"healthBarHeightOverride|1.4",
+		"nonInteractiveShowTooltip"
+	],
+	"states": [
+		{ "name": "empty", "image": "scenery/shrineUpgradeGearOn.png" }
+	]
+},
+{
 	"id": "shrineCraftLabOn",
 	"image": "scenery/shrineUpgradeGearOn.png",
 	"tags": [],
@@ -751,7 +773,7 @@
 	"g": "[0.9,1.05]",
 	"b": "[0.9,1.05]",
 	"aspects": [
-		"rewardRegionLab|hero_creator_craftGear|NONE",
+		"rewardRegionLab|hero_creator_upgradeGear|NONE",
 		"healthBarHeightOverride|1.4",
 		"nonInteractiveShowTooltip"
 	],
