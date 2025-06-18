@@ -31,6 +31,26 @@
 },
 {
 	"modId": "hero_creator",
+	"id": "hero_creator_gainBasicWeapon|_NONE_|_ENTITY_",
+	"parameters": [
+		{},
+		{ "replace": "_ENTITY_", "isEntity": true }
+	],
+	"effects": [ "hero_creator_gainBasicWeapon" ],
+	"importance": -1
+},
+{
+	"modId": "hero_creator",
+	"id": "hero_creator_gainOffHandItem|_NONE_|_ENTITY_",
+	"parameters": [
+		{},
+		{ "replace": "_ENTITY_", "isEntity": true }
+	],
+	"effects": [ "hero_creator_gainOffHandItem" ],
+	"importance": -1
+},
+{
+	"modId": "hero_creator",
 	"id": "hero_creator_upgradeGear|_NONE_|_ENTITY_",
 	"parameters": [
 		{},

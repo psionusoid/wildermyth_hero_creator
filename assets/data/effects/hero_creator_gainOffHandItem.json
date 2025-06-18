@@ -1,0 +1,26 @@
+{
+"id": "hero_creator_gainOffHandItem",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_gainOffHandItem",
+	"modId": "hero_creator",
+	"author": "psionusoid",
+	"tags": [ "okToMarkDone" ],
+	"debug": true
+},
+"type": "ABILITY",
+"verb": "MANEUVER",
+"ability": { "icon": "rewardChest", "category": "research", "priority": "1" },
+"targets": [
+	{
+		"template": "SELF",
+		"aspectsOneOf": [ "human", "elthiarBaseAbilities" ]
+	}
+],
+"outcomes": [
+	{
+		"class": "UpgradeGear",
+		"query": { "allowArmor": false, "allowWeapon": false, "allowAugment": false }
+	}
+]
+}
