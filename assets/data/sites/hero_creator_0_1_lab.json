@@ -215,17 +215,36 @@
 			{
 				"sceneryId": "treasureChestArtifactOn",
 				"a": [ 21, 15 ],
-				"b": [ 21, 15 ]
+				"b": [ 21, 15 ],
+				"adjustLength": 0.1,
+				"wobble": false
+			},
+			{
+				"sceneryId": "treasureChestBasicWeaponOn",
+				"a": [ 22, 15 ],
+				"b": [ 22, 15 ],
+				"adjustLength": -0.1,
+				"wobble": false
 			},
 			{
 				"sceneryId": "treasureChestArmorOn",
-				"a": [ 21, 16 ],
-				"b": [ 21, 16 ]
+				"a": [ 21, 17 ],
+				"b": [ 21, 17 ],
+				"adjustLength": 0.1,
+				"wobble": false
+			},
+			{
+				"sceneryId": "treasureChestOffHandOn",
+				"a": [ 22, 17 ],
+				"b": [ 22, 17 ],
+				"wobble": false
 			},
 			{
 				"sceneryId": "shrineGearUpgradeLabOn",
-				"a": [ 21, 17 ],
-				"b": [ 21, 17 ]
+				"a": [ 21, 16 ],
+				"b": [ 21, 16 ],
+				"adjustLength": 0.5,
+				"wobble": false
 			}
 		],
 		"offsetX": 30,
