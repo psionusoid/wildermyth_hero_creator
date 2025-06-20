@@ -1,8 +1,8 @@
 {
-"id": "hero_creator_consultLordEvergreen",
+"id": "hero_creator_findStarheart",
 "info": {
 	"dataVersion": 1,
-	"sourceFile": "hero_creator_consultLordEvergreen",
+	"sourceFile": "hero_creator_findStarheart",
 	"modId": "hero_creator",
 	"author": "psionusoid",
 	"tags": [ "okToMarkDone" ]
@@ -10,7 +10,7 @@
 "type": "ABILITY",
 "verb": "MANEUVER",
 "ability": {
-	"icon": "arches",
+	"icon": "shootingStar",
 	"category": "research",
 	"priority": "1",
 	"musicOverride": ""
@@ -18,7 +18,10 @@
 "targets": [
 	{
 		"template": "SELF",
-		"aspects": [ "alive", "SELF", "human" ]
+		"aspects": [ "alive", "SELF", "human" ],
+		"aspectValues": [
+			{ "id": "augment_starheart", "forbidden": true }
+		]
 	},
 	{
 		"role": "hero",
@@ -28,6 +31,6 @@
 	}
 ],
 "outcomes": [
-	{ "class": "Branch", "branchEvent": "hero_creator_consultLordEvergreen_branch" }
+	{ "class": "Branch", "branchEvent": "hero_creator_findStarheart_branch" }
 ]
 }

@@ -140,6 +140,7 @@
 									"focus": "foot",
 									"anchor": { "x": 0.271, "y": 0.475 },
 									"size": 0.3,
+									"drawDepth": 0,
 									"nameTag": "none",
 									"foot": { "rotate": 28.61 }
 								},
@@ -151,6 +152,14 @@
 									"size": 0.3,
 									"nameTag": "none",
 									"foot": { "rotate": -61.285 }
+								},
+								{
+									"assetSpec": "comicBg:comicBG_forestTrunksGreen.jpg",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.795, "y": 0.4 },
+									"size": 0.5,
+									"nameTag": "none"
 								}
 							],
 							"textSlots": [
@@ -172,7 +181,8 @@
 									"style": "darken",
 									"pointerOwner": "self",
 									"location": "bottomLeft",
-									"padXFraction": 0.03
+									"padXFraction": 0.113,
+									"padYFraction": 0.021
 								}
 							]
 						}
@@ -193,7 +203,7 @@
 									"facing": "left",
 									"equipment": { "mode": "swapActive" },
 									"focus": "middle",
-									"anchor": { "x": 0.49, "y": 0.325 },
+									"anchor": { "x": 0.508, "y": 0.137 },
 									"size": 0.6598,
 									"nameTag": "none",
 									"head": { "rotate": -1.259 },
@@ -209,6 +219,14 @@
 									"drawDepth": 1,
 									"nameTag": "none",
 									"color": { "r": "1", "g": "0.85941744", "b": "0.63157678", "a": "0.66885912" }
+								},
+								{
+									"assetSpec": "comicBg:comicBG_forestTrunksGreen.jpg",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.795, "y": 0.4 },
+									"size": 0.5,
+									"nameTag": "none"
 								}
 							],
 							"textSlots": [
@@ -229,7 +247,8 @@
 									"style": "darken",
 									"pointerOwner": "self",
 									"location": "bottomLeft",
-									"padXFraction": 0.03
+									"padXFraction": 0.019,
+									"padYFraction": 0.761
 								}
 							]
 						}
@@ -266,6 +285,14 @@
 									"drawDepth": 1,
 									"nameTag": "none",
 									"color": { "r": "1", "g": "0.85941744", "b": "0.63157678", "a": "0.66885912" }
+								},
+								{
+									"assetSpec": "comicBg:comicBG_forestTrunksGreen.jpg",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.812, "y": 0.435 },
+									"size": 0.5,
+									"nameTag": "none"
 								}
 							],
 							"textSlots": [
@@ -286,7 +313,8 @@
 									"style": "darken",
 									"pointerOwner": "self",
 									"location": "bottomLeft",
-									"padXFraction": 0.03
+									"padXFraction": 0.251,
+									"padYFraction": 0.039
 								}
 							]
 						}

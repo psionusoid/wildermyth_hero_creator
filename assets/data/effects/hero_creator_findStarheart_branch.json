@@ -1,0 +1,257 @@
+{
+"id": "hero_creator_findStarheart_branch",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_findStarheart_branch",
+	"modId": "hero_creator",
+	"author": "psionusoid",
+	"tags": [ "okToMarkDone" ]
+},
+"type": "BRANCH",
+"verb": "MANEUVER",
+"ability": {
+	"icon": "rewardUpgrade",
+	"category": "research",
+	"priority": "1",
+	"musicOverride": ""
+},
+"targets": [
+	{ "template": "EVENT" },
+	{ "template": "COMPANY" },
+	{ "role": "hero", "template": "ANY", "type": "HERO", "injectedRole": "hero" },
+	{
+		"template": "PICK_BY_SCORE",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": "max(GOOFBALL,ROMANTIC,POET)",
+		"scoreThreshold": "60",
+		"fromRoles": [ "hero" ],
+		"aspects": [ "alive" ],
+		"aspectValues": [
+			{ "id": "augment_starheart", "forbidden": true }
+		]
+	},
+	{
+		"template": "CHOICE",
+		"promptScript": [
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"bgAuto": "atSite",
+					"actorSlots": [
+						{
+							"role": "hero",
+							"form": "frame-interested",
+							"facing": "left",
+							"anchor": { "x": 0.844, "y": 0.336 },
+							"size": 0.3,
+							"drawDepth": 1.625,
+							"head": { "rotate": 27.918, "scaleY": 1 },
+							"foot": { "rotate": 0 },
+							"color": { "r": "0.85877192", "g": "0.81629717", "b": "0.53596389", "a": "1" },
+							"colorFilter": {}
+						},
+						{
+							"assetSpec": "comic:comet.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.336, "y": 0.782 },
+							"size": 0.3,
+							"nameTag": "none"
+						},
+						{
+							"assetSpec": "comicBg:comicBG_nightStars.jpg",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.865, "y": 0.611 },
+							"size": 0.5,
+							"nameTag": "none"
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "hero_creator_findStarheart_branch",
+							"textKey": "~01~prompt~panel_001~1_hero",
+							"style": "narration",
+							"pointerOwner": "hero",
+							"padXFraction": 0.123,
+							"padYFraction": 0.089,
+							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "hero_creator_findStarheart_branch",
+							"textKey": "~01~prompt~panel_001~2_darken",
+							"style": "darken",
+							"padXFraction": 0.123,
+							"padYFraction": 0.59,
+							"shrinkToFitText": true
+						}
+					]
+				}
+			}
+		],
+		"options": [
+			{
+				"id": "one",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"actorSlots": [
+								{
+									"role": "hero",
+									"form": "frame-interested",
+									"facing": "left",
+									"equipment": { "mode": "leaveEquipment" },
+									"focus": "middle",
+									"anchor": { "x": 0.79, "y": 0.296 },
+									"size": 0.6347,
+									"nameTag": "none",
+									"head": { "rotate": -8.636, "scaleY": 1 },
+									"foot": { "rotate": 0.308 },
+									"color": { "r": "0.85877192", "g": "0.81629717", "b": "0.53596389", "a": "1" }
+								},
+								{
+									"assetSpec": "comicBg:comicBG_nightStars.jpg",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.474, "y": 0.382 },
+									"size": 0.5,
+									"nameTag": "none"
+								},
+								{
+									"assetSpec": "figure:human/misc/warriorM_addons_belt_starheart.png",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.196, "y": 0.548 },
+									"size": 0.5,
+									"drawDepth": -1,
+									"nameTag": "none",
+									"foot": { "rotate": 1.688 }
+								},
+								{
+									"assetSpec": "comic:light_starburstLarge.png",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.195, "y": 0.366 },
+									"size": 0.1,
+									"drawDepth": -2,
+									"nameTag": "none",
+									"foot": { "rotate": -147.888 },
+									"color": { "r": "0.20788354", "g": "0.70280397", "b": "0.86148065", "a": "0.39595374" }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "hero_creator_findStarheart_branch",
+									"textKey": "~02~choice_one~panel_001~1_hero",
+									"style": "thought",
+									"pointerOwner": "hero",
+									"location": "topRight",
+									"padXFraction": 0.168,
+									"padYFraction": 0.017,
+									"widthFraction": 0.8173913,
+									"shrinkToFitText": true,
+									"pointerAdjust": { "pointerOrientH": "onLeft" }
+								},
+								{
+									"textSourceFile": "hero_creator_findStarheart_branch",
+									"textKey": "~02~choice_one~panel_001~2_self",
+									"style": "darken",
+									"pointerOwner": "self",
+									"location": "bottomLeft",
+									"padXFraction": 0.041,
+									"padYFraction": 0.753,
+									"shrinkToFitText": true
+								}
+							]
+						}
+					}
+				],
+				"ifTargetIsPresent": "volunteer"
+			},
+			{
+				"id": "two",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"actorSlots": [
+								{
+									"role": "hero",
+									"form": "frame-happy",
+									"facing": "left",
+									"equipment": { "mode": "swapActive" },
+									"focus": "middle",
+									"anchor": { "x": 0.655, "y": 0.173 },
+									"size": 0.6598,
+									"nameTag": "none",
+									"head": { "rotate": -1.259 },
+									"foot": { "rotate": 0.996 },
+									"color": { "r": "0.85877192", "g": "0.81629717", "b": "0.53596389", "a": "1" }
+								},
+								{
+									"assetSpec": "comicBg:comicBG_nightStars.jpg",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.553, "y": 0.344 },
+									"size": 0.5,
+									"nameTag": "none"
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "hero_creator_findStarheart_branch",
+									"textKey": "~03~choice_two~panel_001~1_hero",
+									"style": "thought",
+									"pointerOwner": "hero",
+									"location": "topRight",
+									"padXFraction": 0.052,
+									"padYFraction": 0.011,
+									"widthFraction": 0.6811596,
+									"shrinkToFitText": true
+								},
+								{
+									"textSourceFile": "hero_creator_findStarheart_branch",
+									"textKey": "~03~choice_two~panel_001~2_self",
+									"style": "darken",
+									"pointerOwner": "self",
+									"location": "bottomLeft",
+									"padXFraction": 0.044,
+									"padYFraction": 0.764
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	}
+],
+"outcomes": [
+	{
+		"class": "IfPlayerChose",
+		"ifPlayerChose": "one",
+		"then": {
+			"class": "AddHistory",
+			"target": "hero",
+			"addHistory": [
+				[ "human_augment_starheart" ]
+			]
+		}
+	},
+	{ "class": "IfPlayerChose", "ifPlayerChose": "two" }
+],
+"implications": {
+	"generatedTargets": [
+		{
+			"role": "site",
+			"createEntity": {
+				"query": { "type": "SITE" },
+				"control": "none"
+			}
+		}
+	]
+}
+}

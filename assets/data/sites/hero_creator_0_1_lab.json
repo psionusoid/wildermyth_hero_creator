@@ -253,6 +253,14 @@
 				"adjustLength": 0.5,
 				"wobble": false,
 				"flipX": "yes"
+			},
+			{
+				"sceneryId": "shrineStarheartOn",
+				"a": [ 38, 27 ],
+				"b": [ 36, 27 ],
+				"adjustLength": 0.5,
+				"wobble": false,
+				"flipX": "no"
 			}
 		],
 		"offsetX": 30,
