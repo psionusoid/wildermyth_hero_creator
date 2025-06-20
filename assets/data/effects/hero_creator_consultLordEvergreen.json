@@ -1,0 +1,33 @@
+{
+"id": "hero_creator_consultLordEvergreen",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_consultLordEvergreen",
+	"modId": "hero_creator",
+	"author": "psionusoid",
+	"tags": [ "okToMarkDone" ]
+},
+"type": "ABILITY",
+"verb": "MANEUVER",
+"ability": {
+	"icon": "rewardUpgrade",
+	"category": "research",
+	"priority": "1",
+	"musicOverride": ""
+},
+"targets": [
+	{
+		"template": "SELF",
+		"aspects": [ "alive", "SELF", "human" ]
+	},
+	{
+		"role": "hero",
+		"template": "ANY",
+		"type": "HERO",
+		"fromRoles": [ "self" ]
+	}
+],
+"outcomes": [
+	{ "class": "Branch", "branchEvent": "hero_creator_consultLordEvergreen_branch" }
+]
+}
