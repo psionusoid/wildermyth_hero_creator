@@ -1,0 +1,3014 @@
+{
+"id": "hero_creator_spiritCapturedLab_branch",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_spiritCapturedLab_branch",
+	"modId": "hero_creator",
+	"author": "psionusoid"
+},
+"type": "PLOT",
+"verb": "MANEUVER",
+"ability": { "icon": "melee", "priority": "1", "encounterScore": 6, "musicOverride": "" },
+"targets": [
+	{ "template": "EVENT" },
+	{ "template": "COMPANY" },
+	{ "role": "site", "template": "SELF_SITE", "choose": "ANY" },
+	{ "template": "INJECTED_ENTITY" },
+	{ "template": "INJECTED_HERO" },
+	{
+		"template": "WEAPON",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": "100",
+		"aspects": [ "weapon", "MAIN_HAND" ],
+		"relativeTo": "hero"
+	},
+	{
+		"role": "item",
+		"template": "ANY",
+		"type": "ITEM",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": "100",
+		"aspects": [ "weapon", "INACTIVE_ITEM" ],
+		"relativeTo": "hero",
+		"notAlreadyMatchedAs": [ "weapon" ]
+	},
+	{
+		"role": "lover",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": "LOVER_WITH.hero",
+		"scoreThreshold": "1",
+		"fromRoles": null,
+		"notAlreadyMatchedAs": [ "hero" ]
+	},
+	{
+		"template": "CHOICE",
+		"promptScript": [
+			{
+				"class": "comicNode_Split",
+				"splitSpec": "target.spirit_fire/spirit_water/spirit_leaf/spirit_stone/spirit_shadow",
+				"splitBranches": [
+					[
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"bgAuto": "atSite",
+								"actorSlots": [
+									{
+										"role": "hero",
+										"form": "frame-talk",
+										"equipment": {},
+										"anchor": { "x": 0.271, "y": 0.532 },
+										"size": 0.553,
+										"head": { "rotate": -9.695 }
+									},
+									{
+										"assetSpec": "figure:simple/spiritFire.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.769, "y": 0.421 },
+										"size": 0.4185,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"foot": { "rotate": 10.119 }
+									},
+									{
+										"assetSpec": "comic:action_pointerSquiggly1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.628, "y": 0.51 },
+										"size": 0.25,
+										"drawDepth": 1.5,
+										"nameTag": "none",
+										"foot": { "rotate": -19.799 },
+										"colorFilter": { "filterName": "hover" }
+									},
+									{
+										"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.627, "y": 0.488 },
+										"size": 0.471,
+										"nameTag": "none",
+										"color": { "r": "0.92191523", "g": "0.84108269", "b": "0.60409635", "a": "1" },
+										"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+									},
+									{
+										"assetSpec": "comic:smokeCloud.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.743, "y": 0.135 },
+										"size": 0.4877,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"color": { "r": "0.99999994", "g": "0.82986391", "b": "0.22543353", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:wildermythGlow.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.796, "y": 0.254 },
+										"size": 0.4624,
+										"drawDepth": 3.5,
+										"nameTag": "none",
+										"foot": { "rotate": 171.774 },
+										"color": { "r": "0.90159214", "g": "0.52124465", "b": "0.41054654", "a": "1" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+										"textKey": "~01~prompt~panel_001.(target_is_spirit_fire)~1_hero",
+										"pointerOwner": "hero",
+										"padXFraction": 0.198,
+										"padYFraction": 0.09,
+										"widthFraction": 0.73066825,
+										"shrinkToFitText": true
+									},
+									{
+										"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+										"textKey": "~01~prompt~panel_001.(target_is_spirit_fire)~2_target",
+										"style": "action",
+										"pointerOwner": "target",
+										"padXFraction": 0.525,
+										"padYFraction": 0.226,
+										"shrinkToFitText": true,
+										"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+									}
+								]
+							}
+						}
+					],
+					[
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"bgAuto": "atSite",
+								"actorSlots": [
+									{
+										"role": "hero",
+										"form": "frame-talk",
+										"equipment": {},
+										"anchor": { "x": 0.271, "y": 0.532 },
+										"size": 0.553,
+										"head": { "rotate": -9.695 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:action_pointerSquiggly1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.647, "y": 0.528 },
+										"size": 0.25,
+										"drawDepth": 1.5,
+										"nameTag": "none",
+										"foot": { "rotate": -19.799 },
+										"colorFilter": { "filterName": "hover" }
+									},
+									{
+										"assetSpec": "comicBg:comicBG_abstractGloom.jpg",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.795, "y": 0.393 },
+										"size": 0.6644,
+										"nameTag": "none"
+									},
+									{
+										"assetSpec": "comic:gradientOutside.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.83, "y": -0.877 },
+										"size": 3.43,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"color": { "r": "0.95143527", "g": "0.90116119", "b": "0.75376707", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:smokeSwirls.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.605, "y": 0.06 },
+										"size": 0.3731,
+										"drawDepth": 3.5,
+										"nameTag": "none",
+										"color": { "r": "0.68355113", "g": "0.81812394", "b": "0.83089978", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:smokeSwirls.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.802, "y": 0.047 },
+										"size": 0.3731,
+										"drawDepth": 3.5,
+										"nameTag": "none",
+										"foot": { "rotate": 41.2 },
+										"color": { "r": "0.80280828", "g": "0.85254174", "b": "0.94863677", "a": "1" }
+									},
+									{
+										"assetSpec": "figure:simple/spiritWater.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.697, "y": 0.421 },
+										"size": 0.4185,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"foot": { "rotate": 1.651 }
+									},
+									{
+										"assetSpec": "comic:smokeTendrilsWell.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.719, "y": 0.096 },
+										"size": 0.4151,
+										"drawDepth": 2.5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "0.58092487" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+										"textKey": "~01~prompt~panel_002.(target_is_spirit_water)~1_hero",
+										"pointerOwner": "hero",
+										"padXFraction": 0.198,
+										"padYFraction": 0.09,
+										"widthFraction": 0.73066825,
+										"shrinkToFitText": true
+									},
+									{
+										"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+										"textKey": "~01~prompt~panel_002.(target_is_spirit_water)~2_target",
+										"style": "action",
+										"pointerOwner": "target",
+										"padXFraction": 0.525,
+										"padYFraction": 0.226,
+										"shrinkToFitText": true,
+										"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+									}
+								]
+							}
+						}
+					],
+					[
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"bgAuto": "atSite",
+								"actorSlots": [
+									{
+										"role": "hero",
+										"form": "frame-talk",
+										"equipment": {},
+										"anchor": { "x": 0.271, "y": 0.532 },
+										"size": 0.553,
+										"head": { "rotate": -9.695 }
+									},
+									{
+										"assetSpec": "figure:simple/spiritWood.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.763, "y": 0.436 },
+										"size": 0.4185,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"foot": { "rotate": 1.651 }
+									},
+									{
+										"assetSpec": "comicBg:comicBG_abstractHappy.jpg",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.384, "y": 0.324 },
+										"size": 0.3885,
+										"nameTag": "none",
+										"foot": { "rotate": 180 },
+										"color": { "r": "0.66352737", "g": "0.75091046", "b": "0.64215308", "a": "1" },
+										"colorFilter": {}
+									},
+									{
+										"assetSpec": "comic:action_pointerSquiggly1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.647, "y": 0.528 },
+										"size": 0.25,
+										"drawDepth": 1.5,
+										"nameTag": "none",
+										"foot": { "rotate": -19.799 },
+										"colorFilter": { "filterName": "hover" }
+									},
+									{
+										"assetSpec": "comic:wildermythGlow.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.64, "y": 0.053 },
+										"size": 0.5476,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"foot": { "rotate": -172.291 },
+										"color": { "r": "0.81502891", "g": "0.91339552", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "asset:ui/scale/unpacked/particle_leafSmall4.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.607, "y": 0.334 },
+										"size": 0.5691,
+										"drawDepth": 2.5,
+										"nameTag": "none",
+										"foot": { "rotate": 37.235 },
+										"color": { "r": "0.95175242", "g": "1", "b": "0.56069362", "a": "1" }
+									},
+									{
+										"assetSpec": "asset:ui/scale/unpacked/particle_leafLarge2.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.577, "y": 0.532 },
+										"size": 0.2302,
+										"drawDepth": 2.5,
+										"nameTag": "none",
+										"foot": { "rotate": -12.858 },
+										"color": { "r": "0.92355263", "g": "1", "b": "0.17341042", "a": "0.93641621" }
+									},
+									{
+										"assetSpec": "asset:ui/scale/unpacked/particle_leafSmall4.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.864, "y": 0.469 },
+										"size": 0.3833,
+										"drawDepth": 2.5,
+										"nameTag": "none",
+										"foot": { "rotate": -24.856 },
+										"color": { "r": "0.98302656", "g": "0.99999994", "b": "0.26589602", "a": "0.73699421" }
+									},
+									{
+										"assetSpec": "comic:smokeDirectional.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.309, "y": 0.094 },
+										"size": 0.3508,
+										"drawDepth": 2.75,
+										"nameTag": "none",
+										"color": { "r": "0.98245859", "g": "1", "b": "0.56647396", "a": "1" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+										"textKey": "~01~prompt~panel_003.(target_is_spirit_leaf)~1_hero",
+										"pointerOwner": "hero",
+										"padXFraction": 0.198,
+										"padYFraction": 0.09,
+										"widthFraction": 0.73066825,
+										"shrinkToFitText": true
+									},
+									{
+										"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+										"textKey": "~01~prompt~panel_003.(target_is_spirit_leaf)~2_target",
+										"style": "action",
+										"pointerOwner": "target",
+										"padXFraction": 0.525,
+										"padYFraction": 0.226,
+										"shrinkToFitText": true,
+										"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+									}
+								]
+							}
+						}
+					],
+					[
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"bgAuto": "atSite",
+								"actorSlots": [
+									{
+										"role": "hero",
+										"form": "frame-talk",
+										"equipment": {},
+										"anchor": { "x": 0.271, "y": 0.532 },
+										"size": 0.553,
+										"head": { "rotate": -9.695 }
+									},
+									{
+										"assetSpec": "figure:simple/spiritStone.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.769, "y": 0.421 },
+										"size": 0.4185,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"foot": { "rotate": 1.651 }
+									},
+									{
+										"assetSpec": "comic:action_pointerSquiggly1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.647, "y": 0.528 },
+										"size": 0.25,
+										"drawDepth": 1.5,
+										"nameTag": "none",
+										"foot": { "rotate": -19.799 },
+										"colorFilter": { "filterName": "hover" }
+									},
+									{
+										"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.51, "y": 0.413 },
+										"size": 0.3618,
+										"nameTag": "none",
+										"colorFilter": { "filterName": "selected", "strength": 3 }
+									},
+									{
+										"assetSpec": "comic:gradientOutside.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.556, "y": -0.531 },
+										"size": 2.4329,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"foot": { "rotate": -4.326 },
+										"color": { "r": "0.67500585", "g": "0.64215285", "b": "0.56776875", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:ridgeVolcano.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.602, "y": 0.311 },
+										"size": 0.9072,
+										"drawDepth": 3.75,
+										"nameTag": "none",
+										"color": { "r": "0.66860735", "g": "0.87545514", "b": "0.5176084", "a": "1" },
+										"colorFilter": { "filterName": "channeling", "strength": 0.1 }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+										"textKey": "~01~prompt~panel_004.(target_is_spirit_stone)~1_hero",
+										"pointerOwner": "hero",
+										"padXFraction": 0.198,
+										"padYFraction": 0.09,
+										"widthFraction": 0.73066825,
+										"shrinkToFitText": true
+									},
+									{
+										"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+										"textKey": "~01~prompt~panel_004.(target_is_spirit_stone)~2_target",
+										"style": "action",
+										"pointerOwner": "target",
+										"padXFraction": 0.525,
+										"padYFraction": 0.226,
+										"shrinkToFitText": true,
+										"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+									}
+								]
+							}
+						}
+					],
+					[
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"bgAuto": "atSite",
+								"actorSlots": [
+									{
+										"role": "hero",
+										"form": "frame-talk",
+										"equipment": {},
+										"anchor": { "x": 0.271, "y": 0.532 },
+										"size": 0.553,
+										"head": { "rotate": -9.695 }
+									},
+									{
+										"assetSpec": "figure:misc/spiritShadow.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.769, "y": 0.421 },
+										"size": 0.4185,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"foot": { "rotate": 1.651 }
+									},
+									{
+										"assetSpec": "comic:action_pointerSquiggly1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.647, "y": 0.528 },
+										"size": 0.25,
+										"drawDepth": 1.5,
+										"nameTag": "none",
+										"foot": { "rotate": -19.799 },
+										"colorFilter": { "filterName": "hover" }
+									},
+									{
+										"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.532, "y": 0.481 },
+										"size": 0.2936,
+										"nameTag": "none",
+										"color": { "r": "0.79073119", "g": "0.26891792", "b": "0.65801591", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:shadowRun.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.773, "y": -0.321 },
+										"size": 0.5415,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"foot": { "rotate": -30.546 }
+									},
+									{
+										"assetSpec": "comic:shadowSitSulk.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.818, "y": -0.069 },
+										"size": 0.5239,
+										"drawDepth": 3.5,
+										"nameTag": "none",
+										"foot": { "rotate": -80.342 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "0.7368421" }
+									},
+									{
+										"assetSpec": "comic:smokeDirectional.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.45, "y": 0.118 },
+										"size": 0.2962,
+										"drawDepth": 0,
+										"nameTag": "none",
+										"foot": { "rotate": 7.328 },
+										"color": { "r": "0.56120652", "g": "0.22475839", "b": "0.47563604", "a": "0.92631578" }
+									},
+									{
+										"assetSpec": "comic:gradientRoundWhite.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.761, "y": -0.051 },
+										"size": 1.4576,
+										"drawDepth": 1.75,
+										"nameTag": "none",
+										"color": { "r": "0.14035088", "g": "0.14035088", "b": "0.14035088", "a": "1" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+										"textKey": "~01~prompt~panel_005.(target_is_spirit_shadow)~1_hero",
+										"pointerOwner": "hero",
+										"padXFraction": 0.198,
+										"padYFraction": 0.09,
+										"widthFraction": 0.73066825,
+										"shrinkToFitText": true
+									},
+									{
+										"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+										"textKey": "~01~prompt~panel_005.(target_is_spirit_shadow)~2_target",
+										"style": "action",
+										"pointerOwner": "target",
+										"padXFraction": 0.525,
+										"padYFraction": 0.226,
+										"shrinkToFitText": true,
+										"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+									}
+								]
+							}
+						}
+					],
+					[
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"bgAuto": "atSite",
+								"actorSlots": [
+									{
+										"role": "hero",
+										"form": "frame-talk",
+										"equipment": {},
+										"anchor": { "x": 0.271, "y": 0.532 },
+										"size": 0.553,
+										"head": { "rotate": -9.695 }
+									},
+									{
+										"role": "target",
+										"facing": "left",
+										"anchor": { "x": 0.78, "y": 0.429 },
+										"size": 0.523,
+										"nameTag": "bottomRight"
+									},
+									{
+										"assetSpec": "comic:action_pointerSquiggly1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.647, "y": 0.528 },
+										"size": 0.25,
+										"drawDepth": 1.5,
+										"nameTag": "none",
+										"foot": { "rotate": -19.799 },
+										"colorFilter": { "filterName": "hover" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+										"textKey": "~01~prompt~panel_006.(target_NOT_spirit_fire/spirit_water/spirit_le...)~1_hero",
+										"pointerOwner": "hero",
+										"padXFraction": 0.198,
+										"padYFraction": 0.09,
+										"widthFraction": 0.73066825,
+										"shrinkToFitText": true
+									},
+									{
+										"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+										"textKey": "~01~prompt~panel_006.(target_NOT_spirit_fire/spirit_water/spirit_le...)~2_target",
+										"style": "action",
+										"pointerOwner": "target",
+										"padXFraction": 0.525,
+										"padYFraction": 0.226,
+										"shrinkToFitText": true,
+										"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+									}
+								]
+							}
+						}
+					]
+				]
+			}
+		],
+		"options": [
+			{
+				"id": "one",
+				"script": [
+					{
+						"class": "comicNode_Split",
+						"splitSpec": "target.spirit_fire/spirit_water/spirit_leaf/spirit_stone/spirit_shadow",
+						"splitBranches": [
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "twoFifths",
+										"actorSlots": [
+											{
+												"assetSpec": "figure:simple/spiritFire.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.834, "y": 0.314 },
+												"size": 0.4185,
+												"drawDepth": 2,
+												"nameTag": "none",
+												"foot": { "rotate": 1.651 }
+											},
+											{
+												"role": "hero",
+												"equipment": { "mode": "leaveEquipment" },
+												"focus": "middle",
+												"anchor": { "x": 0.424, "y": 0.301 },
+												"size": 0.619,
+												"nameTag": null,
+												"head": { "rotate": -21.921 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.627, "y": 0.488 },
+												"size": 0.471,
+												"nameTag": "none",
+												"color": { "r": "0.92191523", "g": "0.84108269", "b": "0.60409635", "a": "1" },
+												"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+											},
+											{
+												"assetSpec": "comic:light_starburstQuarter.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.667, "y": 0.527 },
+												"size": 0.5063,
+												"drawDepth": 2.5,
+												"nameTag": "none"
+											},
+											{
+												"assetSpec": "comic:wildermythGlow.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.793, "y": 0.13 },
+												"size": 0.4624,
+												"drawDepth": 2.75,
+												"nameTag": "none",
+												"foot": { "rotate": 171.774 },
+												"color": { "r": "0.90159214", "g": "0.52124465", "b": "0.41054654", "a": "1" }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~02~choice_one~panel_001.(target_is_spirit_fire)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "twoFifths",
+										"actorSlots": [
+											{
+												"assetSpec": "figure:simple/spiritWater.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.825, "y": 0.354 },
+												"size": 0.4185,
+												"drawDepth": 2,
+												"nameTag": "none",
+												"foot": { "rotate": 1.651 }
+											},
+											{
+												"role": "hero",
+												"equipment": { "mode": "leaveEquipment" },
+												"focus": "middle",
+												"anchor": { "x": 0.462, "y": 0.301 },
+												"size": 0.619,
+												"nameTag": null,
+												"head": { "rotate": -21.921 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.627, "y": 0.488 },
+												"size": 0.471,
+												"nameTag": "none",
+												"color": { "r": "0.68355113", "g": "0.81812394", "b": "0.83089978", "a": "1" },
+												"colorFilter": { "strength": 0.03 }
+											},
+											{
+												"assetSpec": "comic:light_starburstQuarter.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.667, "y": 0.527 },
+												"size": 0.5063,
+												"drawDepth": 2.5,
+												"nameTag": "none"
+											},
+											{
+												"assetSpec": "comic:smokeSwirls.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.938, "y": 0.214 },
+												"size": 0.4624,
+												"drawDepth": 2.75,
+												"nameTag": "none",
+												"foot": { "rotate": -2.047 },
+												"color": { "r": "0.68355113", "g": "0.81812394", "b": "0.83089978", "a": "1" }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~02~choice_one~panel_002.(target_is_spirit_water)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "twoFifths",
+										"actorSlots": [
+											{
+												"assetSpec": "figure:misc/spiritWood.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.929, "y": 0.372 },
+												"size": 0.4185,
+												"drawDepth": 2,
+												"nameTag": "none",
+												"foot": { "rotate": 1.651 }
+											},
+											{
+												"role": "hero",
+												"equipment": { "mode": "leaveEquipment" },
+												"focus": "middle",
+												"anchor": { "x": 0.413, "y": 0.297 },
+												"size": 0.619,
+												"nameTag": null,
+												"head": { "rotate": -21.921 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractSky.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.153, "y": 0.391 },
+												"size": 0.471,
+												"nameTag": "none",
+												"foot": { "rotate": -163.532 },
+												"color": { "r": "0.42390695", "g": "0.59641153", "b": "0.38624746", "a": "1" },
+												"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+											},
+											{
+												"assetSpec": "comic:light_starburstQuarter.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.667, "y": 0.527 },
+												"size": 0.5063,
+												"drawDepth": 2.5,
+												"nameTag": "none"
+											},
+											{
+												"assetSpec": "comic:wildermythGlow.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.799, "y": 0.13 },
+												"size": 0.4624,
+												"drawDepth": 2.75,
+												"nameTag": "none",
+												"foot": { "rotate": 171.774 },
+												"color": { "r": "0.86428684", "g": "0.94899589", "b": "0.80244917", "a": "1" }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~02~choice_one~panel_003.(target_is_spirit_leaf)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "twoFifths",
+										"actorSlots": [
+											{
+												"assetSpec": "figure:misc/spiritStone.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.857, "y": 0.359 },
+												"size": 0.4185,
+												"drawDepth": 2,
+												"nameTag": "none",
+												"foot": { "rotate": 1.651 }
+											},
+											{
+												"role": "hero",
+												"equipment": { "mode": "leaveEquipment" },
+												"focus": "middle",
+												"anchor": { "x": 0.439, "y": 0.306 },
+												"size": 0.619,
+												"nameTag": null,
+												"head": { "rotate": -21.921 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.627, "y": 0.488 },
+												"size": 0.471,
+												"nameTag": "none",
+												"color": { "r": "0.63491929", "g": "0.75338084", "b": "0.8910923", "a": "1" },
+												"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+											},
+											{
+												"assetSpec": "comic:light_starburstQuarter.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.667, "y": 0.527 },
+												"size": 0.5063,
+												"drawDepth": 2.5,
+												"nameTag": "none"
+											},
+											{
+												"assetSpec": "comic:item_rocksTomb.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.44, "y": -0.026 },
+												"size": 0.4624,
+												"drawDepth": 2.75,
+												"nameTag": "none",
+												"foot": { "rotate": 14.35 },
+												"color": { "r": "0.90159214", "g": "0.41054654", "b": "0.88740033", "a": "0.50867051" }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~02~choice_one~panel_004.(target_is_spirit_stone)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "twoFifths",
+										"actorSlots": [
+											{
+												"assetSpec": "figure:misc/spiritShadow.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.885, "y": 0.362 },
+												"size": 0.4185,
+												"drawDepth": 2,
+												"nameTag": "none",
+												"foot": { "rotate": 1.651 }
+											},
+											{
+												"role": "hero",
+												"equipment": { "mode": "leaveEquipment" },
+												"focus": "middle",
+												"anchor": { "x": 0.351, "y": 0.297 },
+												"size": 0.619,
+												"nameTag": null,
+												"head": { "rotate": -21.921 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.95, "y": 0.375 },
+												"size": 0.3301,
+												"nameTag": "none",
+												"color": { "r": "0.79073119", "g": "0.26891792", "b": "0.65801591", "a": "1" },
+												"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+											},
+											{
+												"assetSpec": "comic:gradientRoundWhite.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.916, "y": -0.122 },
+												"size": 1.9232,
+												"drawDepth": 1,
+												"nameTag": "none",
+												"color": { "r": "0", "g": "0", "b": "0", "a": "0.56491226" }
+											},
+											{
+												"assetSpec": "comic:smokeCloud.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.8, "y": 0.265 },
+												"size": 0.5969,
+												"drawDepth": 2.75,
+												"nameTag": "none",
+												"foot": { "rotate": 17.001 },
+												"color": { "r": "0.3657864", "g": "0.1464943", "b": "0.31001279", "a": "0.92631578" }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~02~choice_one~panel_005.(target_is_spirit_shadow)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "twoFifths",
+										"actorSlots": [
+											{
+												"assetSpec": "figure:simple/spiritWater.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.857, "y": 0.394 },
+												"size": 0.4185,
+												"drawDepth": 2,
+												"nameTag": "none",
+												"foot": { "rotate": 1.651 }
+											},
+											{
+												"role": "hero",
+												"equipment": { "mode": "leaveEquipment" },
+												"focus": "middle",
+												"anchor": { "x": 0.555, "y": 0.297 },
+												"size": 0.619,
+												"nameTag": null,
+												"head": { "rotate": -21.921 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractSky.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.627, "y": 0.488 },
+												"size": 0.471,
+												"nameTag": "none",
+												"color": { "r": "0.92191523", "g": "0.84108269", "b": "0.60409635", "a": "1" },
+												"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+											},
+											{
+												"assetSpec": "comic:light_starburstQuarter.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.667, "y": 0.527 },
+												"size": 0.5063,
+												"drawDepth": 2.5,
+												"nameTag": "none"
+											},
+											{
+												"assetSpec": "comic:wildermythGlow.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.793, "y": 0.13 },
+												"size": 0.4624,
+												"drawDepth": 2.75,
+												"nameTag": "none",
+												"foot": { "rotate": 171.774 },
+												"color": { "r": "0.90159214", "g": "0.52124465", "b": "0.41054654", "a": "1" }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~02~choice_one~panel_006.(target_NOT_spirit_fire/spirit_water/spirit_le...)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							]
+						]
+					}
+				],
+				"ifTargetIsPresent": "weapon"
+			},
+			{
+				"id": "two",
+				"script": [
+					{
+						"class": "comicNode_Split",
+						"splitSpec": "target.spirit_fire/spirit_water/spirit_leaf/spirit_stone/spirit_shadow",
+						"splitBranches": [
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "twoFifths",
+										"actorSlots": [
+											{
+												"role": "hero",
+												"form": "frame-interested",
+												"equipment": { "mode": "swapActive" },
+												"focus": "middle",
+												"anchor": { "x": 0.663, "y": 0.322 },
+												"size": 0.574,
+												"nameTag": null,
+												"head": { "rotate": 10.31, "scaleY": -1 }
+											},
+											{
+												"assetSpec": "figure:misc/spiritFire.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.113, "y": 0.332 },
+												"size": 0.3572,
+												"drawDepth": 2,
+												"nameTag": "none",
+												"foot": { "rotate": 1.651 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.627, "y": 0.488 },
+												"size": 0.471,
+												"nameTag": "none",
+												"color": { "r": "0.92191523", "g": "0.84108269", "b": "0.60409635", "a": "1" },
+												"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+											},
+											{
+												"assetSpec": "comic:light_starburstQuarter.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.289, "y": 0.452 },
+												"size": 0.5063,
+												"drawDepth": 2.5,
+												"nameTag": "none",
+												"foot": { "rotate": 62.229 }
+											},
+											{
+												"assetSpec": "comic:wildermythGlow.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.034, "y": -0.03 },
+												"size": 0.4624,
+												"drawDepth": 2.75,
+												"nameTag": "none",
+												"foot": { "rotate": -142.316 },
+												"color": { "r": "0.90159214", "g": "0.52124465", "b": "0.41054654", "a": "1" }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~03~choice_two~panel_001.(target_is_spirit_fire)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "twoFifths",
+										"actorSlots": [
+											{
+												"role": "hero",
+												"form": "frame-interested",
+												"equipment": { "mode": "swapActive" },
+												"focus": "middle",
+												"anchor": { "x": 0.663, "y": 0.322 },
+												"size": 0.574,
+												"nameTag": null,
+												"head": { "rotate": 10.31, "scaleY": -1 }
+											},
+											{
+												"assetSpec": "figure:simple/spiritWater.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.215, "y": 0.323 },
+												"size": 0.3921,
+												"drawDepth": 2,
+												"nameTag": "none",
+												"foot": { "rotate": -12.527 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.627, "y": 0.488 },
+												"size": 0.471,
+												"nameTag": "none",
+												"color": { "r": "0.68355113", "g": "0.81812394", "b": "0.83089978", "a": "1" },
+												"colorFilter": { "strength": 0.03 }
+											},
+											{
+												"assetSpec": "comic:light_starburstQuarter.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.289, "y": 0.452 },
+												"size": 0.5063,
+												"drawDepth": 2.5,
+												"nameTag": "none",
+												"foot": { "rotate": 62.229 }
+											},
+											{
+												"assetSpec": "comic:smokeSwirls.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.2, "y": 0.037 },
+												"size": 0.4624,
+												"drawDepth": 2.75,
+												"nameTag": "none",
+												"foot": { "rotate": -34.021 },
+												"color": { "r": "0.45511043", "g": "0.65324688", "b": "0.67205715", "a": "1" }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~03~choice_two~panel_002.(target_is_spirit_water)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "twoFifths",
+										"actorSlots": [
+											{
+												"role": "hero",
+												"form": "frame-interested",
+												"equipment": { "mode": "swapActive" },
+												"focus": "middle",
+												"anchor": { "x": 0.663, "y": 0.322 },
+												"size": 0.574,
+												"nameTag": null,
+												"head": { "rotate": 10.31, "scaleY": -1 }
+											},
+											{
+												"assetSpec": "figure:misc/spiritWood.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.136, "y": 0.31 },
+												"size": 0.3306,
+												"drawDepth": 2,
+												"nameTag": "none",
+												"foot": { "rotate": 1.651 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractSky.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.153, "y": 0.391 },
+												"size": 0.471,
+												"nameTag": "none",
+												"foot": { "rotate": -163.532 },
+												"color": { "r": "0.42390695", "g": "0.59641153", "b": "0.38624746", "a": "1" },
+												"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+											},
+											{
+												"assetSpec": "comic:light_starburstQuarter.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.289, "y": 0.452 },
+												"size": 0.5063,
+												"drawDepth": 2.5,
+												"nameTag": "none",
+												"foot": { "rotate": 62.229 }
+											},
+											{
+												"assetSpec": "comic:wildermythGlow.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.034, "y": -0.03 },
+												"size": 0.4624,
+												"drawDepth": 2.75,
+												"nameTag": "none",
+												"foot": { "rotate": -142.316 },
+												"color": { "r": "0.86428684", "g": "0.94899589", "b": "0.80244917", "a": "1" }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~03~choice_two~panel_003.(target_is_spirit_leaf)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "twoFifths",
+										"actorSlots": [
+											{
+												"role": "hero",
+												"form": "frame-interested",
+												"equipment": { "mode": "swapActive" },
+												"focus": "middle",
+												"anchor": { "x": 0.663, "y": 0.322 },
+												"size": 0.574,
+												"nameTag": null,
+												"head": { "rotate": 10.31, "scaleY": -1 }
+											},
+											{
+												"assetSpec": "figure:misc/spiritStone.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.118, "y": 0.301 },
+												"size": 0.4185,
+												"drawDepth": 2,
+												"nameTag": "none",
+												"foot": { "rotate": -12.098 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.36, "y": 0.452 },
+												"size": 0.471,
+												"nameTag": "none",
+												"color": { "r": "0.61478829", "g": "0.71194202", "b": "0.89966261", "a": "1" },
+												"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+											},
+											{
+												"assetSpec": "comic:light_starburstQuarter.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.289, "y": 0.452 },
+												"size": 0.5063,
+												"drawDepth": 2.5,
+												"nameTag": "none",
+												"foot": { "rotate": 62.229 }
+											},
+											{
+												"assetSpec": "comic:item_rocksTomb.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.269, "y": 0.236 },
+												"size": 0.4624,
+												"drawDepth": 2.75,
+												"nameTag": "none",
+												"foot": { "rotate": -26.963 },
+												"color": { "r": "0.90159214", "g": "0.41054654", "b": "0.88740033", "a": "0.50867051" }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~03~choice_two~panel_004.(target_is_spirit_stone)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "twoFifths",
+										"actorSlots": [
+											{
+												"role": "hero",
+												"form": "frame-interested",
+												"equipment": { "mode": "swapActive" },
+												"focus": "middle",
+												"anchor": { "x": 0.716, "y": 0.29 },
+												"size": 0.574,
+												"drawDepth": 1.1875,
+												"nameTag": null,
+												"head": { "rotate": -1.945, "scaleY": -1 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": -0.04, "y": 0.445 },
+												"size": 0.3491,
+												"nameTag": "none",
+												"color": { "r": "0.79073119", "g": "0.26891792", "b": "0.65801591", "a": "1" },
+												"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+											},
+											{
+												"assetSpec": "figure:misc/spiritShadow.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.166, "y": 0.345 },
+												"size": 0.4185,
+												"drawDepth": 1.125,
+												"nameTag": "none",
+												"foot": { "rotate": 1.651 }
+											},
+											{
+												"assetSpec": "comic:gradientRoundWhite.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.088, "y": -0.133 },
+												"size": 1.9232,
+												"drawDepth": 1,
+												"nameTag": "none",
+												"color": { "r": "0", "g": "0", "b": "0", "a": "0.56491226" }
+											},
+											{
+												"assetSpec": "comic:smokeCloud.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.175, "y": 0.308 },
+												"size": 0.5969,
+												"drawDepth": 1.25,
+												"nameTag": "none",
+												"foot": { "rotate": 17.001 },
+												"color": { "r": "0.3657864", "g": "0.1464943", "b": "0.31001279", "a": "0.92631578" }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~03~choice_two~panel_005.(target_is_spirit_shadow)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "twoFifths",
+										"actorSlots": [
+											{
+												"role": "hero",
+												"form": "frame-interested",
+												"equipment": { "mode": "swapActive" },
+												"focus": "middle",
+												"anchor": { "x": 0.663, "y": 0.322 },
+												"size": 0.574,
+												"nameTag": null,
+												"head": { "rotate": 10.31, "scaleY": -1 }
+											},
+											{
+												"role": "target",
+												"anchor": { "x": 0.141, "y": 0.376 },
+												"size": 0.523,
+												"nameTag": null
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.627, "y": 0.488 },
+												"size": 0.471,
+												"nameTag": "none",
+												"color": { "r": "0.68355113", "g": "0.81812394", "b": "0.83089978", "a": "1" },
+												"colorFilter": { "strength": 0.03 }
+											},
+											{
+												"assetSpec": "comic:light_starburstQuarter.png",
+												"role": null,
+												"facing": "left",
+												"focus": "foot",
+												"anchor": { "x": 0.289, "y": 0.452 },
+												"size": 0.5063,
+												"drawDepth": 2.5,
+												"nameTag": "none",
+												"foot": { "rotate": 62.229 }
+											},
+											{
+												"assetSpec": "comic:smokeSwirls.png",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.2, "y": 0.037 },
+												"size": 0.4624,
+												"drawDepth": 2.75,
+												"nameTag": "none",
+												"foot": { "rotate": -39.571 },
+												"color": { "r": "0.45511043", "g": "0.65324688", "b": "0.67205715", "a": "1" }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~03~choice_two~panel_006.(target_NOT_spirit_fire/spirit_water/spirit_le...)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							]
+						]
+					}
+				],
+				"ifTargetIsPresent": "item"
+			},
+			{
+				"id": "three",
+				"script": [
+					{
+						"class": "comicNode_Split",
+						"splitSpec": "target.spirit_fire/spirit_water/spirit_leaf/spirit_stone/spirit_shadow",
+						"splitBranches": [
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "fifth",
+										"actorSlots": [
+											{
+												"role": "hero",
+												"form": "frame-happy",
+												"equipment": {},
+												"nameTag": null,
+												"head": { "rotate": -11.31 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 1.986, "y": 0.199 },
+												"size": 0.63090736,
+												"nameTag": "none",
+												"color": { "r": "0.92191523", "g": "0.84108269", "b": "0.60409635", "a": "1" },
+												"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~04~choice_three~panel_001.(target_is_spirit_fire)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "fifth",
+										"actorSlots": [
+											{
+												"role": "hero",
+												"form": "frame-happy",
+												"equipment": {},
+												"nameTag": null,
+												"head": { "rotate": -11.31 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 1.427, "y": 0.092 },
+												"size": 0.63090736,
+												"nameTag": "none",
+												"color": { "r": "0.96986198", "g": "0.98267841", "b": "0.98389518", "a": "1" },
+												"colorFilter": { "filterName": "selected", "strength": 2 }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~04~choice_three~panel_002.(target_is_spirit_water)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "fifth",
+										"actorSlots": [
+											{
+												"role": "hero",
+												"form": "frame-happy",
+												"equipment": {},
+												"nameTag": null,
+												"head": { "rotate": -11.31 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.915, "y": 0.621 },
+												"size": 0.63090736,
+												"nameTag": "none",
+												"color": { "r": "0.66860735", "g": "0.87545514", "b": "0.5176084", "a": "1" },
+												"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~04~choice_three~panel_003.(target_is_spirit_leaf)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "fifth",
+										"actorSlots": [
+											{
+												"role": "hero",
+												"form": "frame-happy",
+												"equipment": {},
+												"nameTag": null,
+												"head": { "rotate": -11.31 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.857, "y": 0.382 },
+												"size": 0.4188,
+												"nameTag": "none",
+												"color": { "r": "0.75144506", "g": "0.88793474", "b": "1", "a": "1" },
+												"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~04~choice_three~panel_004.(target_is_spirit_stone)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "fifth",
+										"actorSlots": [
+											{
+												"role": "hero",
+												"form": "frame-happy",
+												"equipment": {},
+												"nameTag": null,
+												"head": { "rotate": -11.31 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 0.442, "y": 0.456 },
+												"size": 0.4516,
+												"nameTag": "none",
+												"color": { "r": "0.79073119", "g": "0.26891792", "b": "0.65801591", "a": "1" },
+												"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~04~choice_three~panel_005.(target_is_spirit_shadow)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							],
+							[
+								{
+									"class": "comicNode_Panel",
+									"panel": {
+										"size": "fifth",
+										"actorSlots": [
+											{
+												"role": "hero",
+												"form": "frame-happy",
+												"equipment": {},
+												"nameTag": null,
+												"head": { "rotate": -11.31 }
+											},
+											{
+												"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+												"role": null,
+												"focus": "foot",
+												"anchor": { "x": 1.427, "y": 0.092 },
+												"size": 0.63090736,
+												"nameTag": "none",
+												"color": { "r": "0.96986198", "g": "0.98267841", "b": "0.98389518", "a": "1" },
+												"colorFilter": { "filterName": "selected", "strength": 2 }
+											}
+										],
+										"textSlots": [
+											{
+												"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+												"textKey": "~04~choice_three~panel_006.(target_NOT_spirit_fire/spirit_water/spirit_le...)~1_narration",
+												"style": "narration"
+											}
+										]
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		]
+	}
+],
+"outcomes": [
+	{
+		"class": "IfPlayerChose",
+		"target": "hero",
+		"ifPlayerChose": "one",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "Description",
+					"script": [
+						{
+							"class": "comicNode_Split",
+							"splitSpec": "target.spirit_fire/spirit_water/spirit_leaf/spirit_stone/spirit_shadow",
+							"splitBranches": [
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-interested",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.166, "y": 0.607 },
+													"head": { "rotate": -26.98 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritFire.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.776, "y": 0.396 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": 1.651 }
+												},
+												{
+													"assetSpec": "comic:light_starburstLarge.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.483, "y": -0.053 },
+													"size": 0.259,
+													"nameTag": "none"
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractRadialYellow.jpg",
+													"role": null,
+													"focus": "foot",
+													"size": 0.4301,
+													"nameTag": "none",
+													"color": { "r": "0.83300483", "g": "0.6616165", "b": "0.57739985", "a": "1" }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~05~player_chose_one~panel_001.(target_is_spirit_fire)~1_narration",
+													"style": "narration"
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-interested",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.166, "y": 0.607 },
+													"head": { "rotate": -26.98 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritWater.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.776, "y": 0.396 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": 14.743 }
+												},
+												{
+													"assetSpec": "comic:light_starburstLarge.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.483, "y": -0.053 },
+													"size": 0.259,
+													"nameTag": "none"
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractTeal.jpg",
+													"role": null,
+													"focus": "foot",
+													"size": 0.4301,
+													"nameTag": "none",
+													"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~05~player_chose_one~panel_002.(target_is_spirit_water)~1_narration",
+													"style": "narration"
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-interested",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.166, "y": 0.607 },
+													"head": { "rotate": -26.98 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritWood.png",
+													"role": null,
+													"facing": "left",
+													"focus": "foot",
+													"anchor": { "x": 0.892, "y": 0.427 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": 7.262 }
+												},
+												{
+													"assetSpec": "comic:light_starburstLarge.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.483, "y": -0.053 },
+													"size": 0.259,
+													"nameTag": "none"
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractTeal.jpg",
+													"role": null,
+													"focus": "foot",
+													"size": 0.4301,
+													"nameTag": "none",
+													"color": { "r": "0.99999994", "g": "0.82598817", "b": "0.46242779", "a": "1" },
+													"colorFilter": { "filterName": "selected", "strength": 3 }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~05~player_chose_one~panel_003.(target_is_spirit_leaf)~1_narration",
+													"style": "narration"
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-interested",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.166, "y": 0.607 },
+													"head": { "rotate": -26.98 }
+												},
+												{
+													"assetSpec": "comic:light_starburstLarge.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.483, "y": -0.053 },
+													"size": 0.259,
+													"nameTag": "none"
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+													"role": null,
+													"focus": "foot",
+													"size": 0.4301,
+													"nameTag": "none",
+													"color": { "r": "0.93439472", "g": "0.77080762", "b": "0.89278883", "a": "1" },
+													"colorFilter": { "filterName": "selected", "strength": 4 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritStone.png",
+													"role": null,
+													"facing": "left",
+													"focus": "foot",
+													"anchor": { "x": 0.952, "y": 0.436 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": 8.73 }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~05~player_chose_one~panel_004.(target_is_spirit_stone)~1_narration",
+													"style": "narration"
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-interested",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.166, "y": 0.607 },
+													"head": { "rotate": -26.98 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritShadow.png",
+													"role": null,
+													"facing": "left",
+													"focus": "foot",
+													"anchor": { "x": 0.952, "y": 0.436 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": 8.73 }
+												},
+												{
+													"assetSpec": "comic:light_starburstLarge.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.483, "y": -0.053 },
+													"size": 0.259,
+													"nameTag": "none",
+													"color": { "r": "1", "g": "1", "b": "1", "a": "0.58092487" }
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.627, "y": 0.488 },
+													"size": 0.471,
+													"nameTag": "none",
+													"color": { "r": "0.79073119", "g": "0.26891792", "b": "0.65801591", "a": "1" },
+													"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+												},
+												{
+													"assetSpec": "comic:gradientRoundWhite.png",
+													"role": null,
+													"facing": "left",
+													"focus": "foot",
+													"anchor": { "x": 0.827, "y": -0.11 },
+													"size": 2.4047,
+													"drawDepth": 1.5,
+													"nameTag": "none",
+													"color": { "r": "0", "g": "0", "b": "0", "a": "0.56491226" }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~05~player_chose_one~panel_005.(target_is_spirit_shadow)~1_narration",
+													"style": "narration"
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-interested",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.166, "y": 0.607 },
+													"head": { "rotate": -26.98 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritStone.png",
+													"role": null,
+													"facing": "left",
+													"focus": "foot",
+													"anchor": { "x": 0.952, "y": 0.436 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": 8.73 }
+												},
+												{
+													"assetSpec": "comic:light_starburstLarge.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.483, "y": -0.053 },
+													"size": 0.259,
+													"nameTag": "none"
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractRadialYellow.jpg",
+													"role": null,
+													"focus": "foot",
+													"size": 0.4301,
+													"nameTag": "none",
+													"color": { "r": "0.55000174", "g": "0.47398841", "b": "1", "a": "1" }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~05~player_chose_one~panel_006.(target_NOT_spirit_fire/spirit_water/spirit_le...)~1_narration",
+													"style": "narration"
+												}
+											]
+										}
+									}
+								]
+							]
+						}
+					]
+				},
+				{
+					"class": "UpgradeGear",
+					"query": {},
+					"restrictTo": [ "hero" ],
+					"upgradeWeapon": "weapon",
+					"upgradeFromSpirit": "target"
+				}
+			]
+		}
+	},
+	{
+		"class": "IfPlayerChose",
+		"target": "hero",
+		"ifPlayerChose": "two",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "Description",
+					"script": [
+						{
+							"class": "comicNode_Split",
+							"splitSpec": "target.spirit_fire/spirit_water/spirit_leaf/spirit_stone/spirit_shadow",
+							"splitBranches": [
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-interested",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.166, "y": 0.607 },
+													"head": { "rotate": -26.98 }
+												},
+												{
+													"assetSpec": "comic:light_starburstLarge.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.483, "y": -0.053 },
+													"size": 0.259,
+													"nameTag": "none"
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractRadialYellow.jpg",
+													"role": null,
+													"focus": "foot",
+													"size": 0.4301,
+													"nameTag": "none",
+													"color": { "r": "0.83300483", "g": "0.6616165", "b": "0.57739985", "a": "1" }
+												},
+												{
+													"assetSpec": "figure:misc/spiritFire.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.835, "y": 0.377 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": 1.651 }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~06~player_chose_two~panel_001.(target_is_spirit_fire)~1_narration",
+													"style": "narration"
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-interested",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.166, "y": 0.607 },
+													"head": { "rotate": -26.98 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritWater.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.776, "y": 0.396 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": 14.743 }
+												},
+												{
+													"assetSpec": "comic:light_starburstLarge.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.483, "y": -0.053 },
+													"size": 0.259,
+													"nameTag": "none"
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractTeal.jpg",
+													"role": null,
+													"focus": "foot",
+													"size": 0.4301,
+													"nameTag": "none",
+													"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~06~player_chose_two~panel_002.(target_is_spirit_water)~1_narration",
+													"style": "narration"
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-interested",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.166, "y": 0.607 },
+													"head": { "rotate": -26.98 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritWood.png",
+													"role": null,
+													"facing": "left",
+													"focus": "foot",
+													"anchor": { "x": 0.892, "y": 0.427 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": 7.262 }
+												},
+												{
+													"assetSpec": "comic:light_starburstLarge.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.483, "y": -0.053 },
+													"size": 0.259,
+													"nameTag": "none"
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractTeal.jpg",
+													"role": null,
+													"focus": "foot",
+													"size": 0.4301,
+													"nameTag": "none",
+													"color": { "r": "0.99999994", "g": "0.82598817", "b": "0.46242779", "a": "1" },
+													"colorFilter": { "filterName": "selected", "strength": 3 }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~06~player_chose_two~panel_003.(target_is_spirit_leaf)~1_narration",
+													"style": "narration"
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-interested",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.166, "y": 0.607 },
+													"head": { "rotate": -26.98 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritStone.png",
+													"role": null,
+													"facing": "left",
+													"focus": "foot",
+													"anchor": { "x": 0.952, "y": 0.436 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": 8.73 }
+												},
+												{
+													"assetSpec": "comic:light_starburstLarge.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.483, "y": -0.053 },
+													"size": 0.259,
+													"nameTag": "none"
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+													"role": null,
+													"focus": "foot",
+													"size": 0.4301,
+													"nameTag": "none",
+													"color": { "r": "0.93439472", "g": "0.77080762", "b": "0.89278883", "a": "1" },
+													"colorFilter": { "filterName": "selected", "strength": 4 }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~06~player_chose_two~panel_004.(target_is_spirit_stone)~1_narration",
+													"style": "narration"
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-interested",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.166, "y": 0.607 },
+													"head": { "rotate": -26.98 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritShadow.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.824, "y": 0.396 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": 1.651 }
+												},
+												{
+													"assetSpec": "comic:light_starburstLarge.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.483, "y": -0.053 },
+													"size": 0.259,
+													"nameTag": "none",
+													"color": { "r": "1", "g": "1", "b": "1", "a": "0.58092487" }
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.627, "y": 0.488 },
+													"size": 0.471,
+													"nameTag": "none",
+													"color": { "r": "0.79073119", "g": "0.26891792", "b": "0.65801591", "a": "1" },
+													"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+												},
+												{
+													"assetSpec": "comic:gradientRoundWhite.png",
+													"role": null,
+													"facing": "left",
+													"focus": "foot",
+													"anchor": { "x": 0.812, "y": -0.114 },
+													"size": 2.2729,
+													"drawDepth": 1,
+													"nameTag": "none",
+													"color": { "r": "0", "g": "0", "b": "0", "a": "0.56491226" }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~06~player_chose_two~panel_005.(target_is_spirit_shadow)~1_narration",
+													"style": "narration"
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-interested",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.166, "y": 0.607 },
+													"head": { "rotate": -26.98 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritFire.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.776, "y": 0.396 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": 1.651 }
+												},
+												{
+													"assetSpec": "comic:light_starburstLarge.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.483, "y": -0.053 },
+													"size": 0.259,
+													"nameTag": "none"
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractRadialYellow.jpg",
+													"role": null,
+													"focus": "foot",
+													"size": 0.4301,
+													"nameTag": "none",
+													"color": { "r": "0.83300483", "g": "0.6616165", "b": "0.57739985", "a": "1" }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~06~player_chose_two~panel_006.(target_NOT_spirit_fire/spirit_water/spirit_le...)~1_narration",
+													"style": "narration"
+												}
+											]
+										}
+									}
+								]
+							]
+						}
+					]
+				},
+				{
+					"class": "UpgradeGear",
+					"query": {},
+					"restrictTo": [ "hero" ],
+					"upgradeWeapon": "item",
+					"upgradeFromSpirit": "target"
+				}
+			]
+		}
+	},
+	{
+		"class": "IfPlayerChose",
+		"target": "hero",
+		"ifPlayerChose": "three",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "Description",
+					"script": [
+						{
+							"class": "comicNode_Split",
+							"splitSpec": "target.spirit_fire/spirit_water/spirit_leaf/spirit_stone/spirit_shadow",
+							"splitBranches": [
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-talk",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.284, "y": 0.598 },
+													"size": 0.516,
+													"head": { "rotate": 7.69 }
+												},
+												{
+													"assetSpec": "figure:simple/spiritFire.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.862, "y": 0.404 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": -4.366 }
+												},
+												{
+													"assetSpec": "comic:action_pointerSquiggly1.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.783, "y": 0.53 },
+													"size": 0.25,
+													"drawDepth": 1.5,
+													"nameTag": "none",
+													"foot": { "rotate": -31.455 },
+													"colorFilter": { "filterName": "hover" }
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.627, "y": 0.488 },
+													"size": 0.471,
+													"nameTag": "none",
+													"color": { "r": "0.92191523", "g": "0.84108269", "b": "0.60409635", "a": "1" },
+													"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+												},
+												{
+													"assetSpec": "comic:smokeCloud.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.743, "y": 0.135 },
+													"size": 0.4877,
+													"drawDepth": 3,
+													"nameTag": "none",
+													"color": { "r": "0.88582975", "g": "0.69007242", "b": "0.33960372", "a": "1" }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_001.(target_is_spirit_fire)~1_hero",
+													"pointerOwner": "hero",
+													"padXFraction": 0.242,
+													"padYFraction": 0.087,
+													"shrinkToFitText": true
+												},
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_001.(target_is_spirit_fire)~2_target",
+													"style": "action",
+													"pointerOwner": "target",
+													"location": "topRight",
+													"padXFraction": 0.089,
+													"padYFraction": 0.258,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+												},
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_001.(target_is_spirit_fire)~3_target",
+													"style": "action",
+													"pointerOwner": "target",
+													"padXFraction": 0.534,
+													"padYFraction": 0.349,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-talk",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.284, "y": 0.598 },
+													"size": 0.516,
+													"head": { "rotate": 7.69 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritWater.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.896, "y": 0.408 },
+													"size": 0.4185,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": -16.561 }
+												},
+												{
+													"assetSpec": "comic:action_pointerSquiggly1.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.792, "y": 0.527 },
+													"size": 0.25,
+													"drawDepth": 1.5,
+													"nameTag": "none",
+													"foot": { "rotate": -31.536 },
+													"colorFilter": { "filterName": "hover" }
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractGloom.jpg",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.903, "y": 0.683 },
+													"size": 0.471,
+													"nameTag": "none",
+													"color": { "r": "0.95143527", "g": "0.90116119", "b": "0.75376707", "a": "1" }
+												},
+												{
+													"assetSpec": "comic:smokeSwirls.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.852, "y": 0.1 },
+													"size": 0.4877,
+													"drawDepth": 3,
+													"nameTag": "none",
+													"color": { "r": "0.68355113", "g": "0.81812394", "b": "0.83089978", "a": "1" }
+												},
+												{
+													"assetSpec": "comic:gradientRoundWhite.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.743, "y": 0.201 },
+													"size": 3.076,
+													"drawDepth": 3.5,
+													"nameTag": "none",
+													"foot": { "rotate": 0.431 },
+													"color": { "r": "0.36333501", "g": "0.53126699", "b": "0.65978634", "a": "1" }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_002.(target_is_spirit_water)~1_hero",
+													"pointerOwner": "hero",
+													"padXFraction": 0.242,
+													"padYFraction": 0.087,
+													"shrinkToFitText": true
+												},
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_002.(target_is_spirit_water)~2_target",
+													"style": "action",
+													"pointerOwner": "target",
+													"location": "topRight",
+													"padXFraction": 0.05,
+													"padYFraction": 0.264,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+												},
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_002.(target_is_spirit_water)~3_target",
+													"style": "action",
+													"pointerOwner": "target",
+													"padXFraction": 0.534,
+													"padYFraction": 0.349,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-talk",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.284, "y": 0.598 },
+													"size": 0.516,
+													"head": { "rotate": 7.69 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritWood.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.836, "y": 0.405 },
+													"size": 0.4098,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": -11.048 }
+												},
+												{
+													"assetSpec": "comic:action_pointerSquiggly1.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.851, "y": 0.524 },
+													"size": 0.25,
+													"drawDepth": 1.5,
+													"nameTag": "none",
+													"foot": { "rotate": -34.818 },
+													"colorFilter": { "filterName": "hover" }
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractHappy.jpg",
+													"role": null,
+													"facing": "left",
+													"focus": "foot",
+													"anchor": { "x": 0.792, "y": 0.5 },
+													"size": 0.3885,
+													"nameTag": "none",
+													"foot": { "rotate": -172.413 },
+													"color": { "r": "0.66352737", "g": "0.75091046", "b": "0.64215308", "a": "1" },
+													"colorFilter": {}
+												},
+												{
+													"assetSpec": "comic:smokeCloud.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.868, "y": 0.063 },
+													"size": 0.4877,
+													"drawDepth": 3,
+													"nameTag": "none",
+													"color": { "r": "0.95175242", "g": "1", "b": "0.56069362", "a": "1" }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_003.(target_is_spirit_leaf)~1_hero",
+													"pointerOwner": "hero",
+													"padXFraction": 0.242,
+													"padYFraction": 0.087,
+													"shrinkToFitText": true
+												},
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_003.(target_is_spirit_leaf)~2_target",
+													"style": "action",
+													"pointerOwner": "target",
+													"location": "topRight",
+													"padXFraction": 0.05,
+													"padYFraction": 0.264,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+												},
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_003.(target_is_spirit_leaf)~3_target",
+													"style": "action",
+													"pointerOwner": "target",
+													"padXFraction": 0.534,
+													"padYFraction": 0.349,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-talk",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.284, "y": 0.598 },
+													"size": 0.516,
+													"head": { "rotate": 7.69 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritStone.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.818, "y": 0.348 },
+													"size": 0.3524,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": -9.865 }
+												},
+												{
+													"assetSpec": "comic:action_pointerSquiggly1.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.834, "y": 0.518 },
+													"size": 0.25,
+													"drawDepth": 1.5,
+													"nameTag": "none",
+													"foot": { "rotate": -34.783 },
+													"colorFilter": { "filterName": "hover" }
+												},
+												{
+													"assetSpec": "comic:ridgeVolcano.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.854, "y": 1.053 },
+													"size": 0.9072,
+													"drawDepth": 3.75,
+													"nameTag": "none",
+													"color": { "r": "0.66860735", "g": "0.87545514", "b": "0.5176084", "a": "1" },
+													"colorFilter": { "filterName": "channeling", "strength": 0.1 }
+												},
+												{
+													"assetSpec": "comic:smokeCloud.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.743, "y": 0.135 },
+													"size": 0.4877,
+													"drawDepth": 3,
+													"nameTag": "none",
+													"color": { "r": "0.8912093", "g": "0.87283248", "b": "0.99999994", "a": "1" }
+												},
+												{
+													"assetSpec": "comic:gradientOutside.png",
+													"role": null,
+													"facing": "left",
+													"focus": "foot",
+													"anchor": { "x": 0.551, "y": -0.757 },
+													"size": 2.4329,
+													"drawDepth": 3,
+													"nameTag": "none",
+													"foot": { "rotate": -4.326 },
+													"color": { "r": "0.67500585", "g": "0.64215285", "b": "0.56776875", "a": "1" }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_004.(target_is_spirit_stone)~1_hero",
+													"pointerOwner": "hero",
+													"padXFraction": 0.242,
+													"padYFraction": 0.087,
+													"shrinkToFitText": true
+												},
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_004.(target_is_spirit_stone)~2_target",
+													"style": "action",
+													"pointerOwner": "target",
+													"location": "topRight",
+													"padXFraction": 0.05,
+													"padYFraction": 0.264,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+												},
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_004.(target_is_spirit_stone)~3_target",
+													"style": "action",
+													"pointerOwner": "target",
+													"padXFraction": 0.534,
+													"padYFraction": 0.349,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-talk",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.284, "y": 0.598 },
+													"size": 0.516,
+													"head": { "rotate": 7.69 }
+												},
+												{
+													"assetSpec": "comic:action_pointerSquiggly1.png",
+													"role": null,
+													"facing": "left",
+													"focus": "foot",
+													"anchor": { "x": 0.884, "y": 0.492 },
+													"size": 0.25,
+													"drawDepth": 1.5,
+													"nameTag": "none",
+													"foot": { "rotate": -52.141 },
+													"colorFilter": { "filterName": "hover" }
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.585, "y": 0.488 },
+													"size": 0.2756,
+													"nameTag": "none",
+													"color": { "r": "0.79073119", "g": "0.26891792", "b": "0.65801591", "a": "1" },
+													"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+												},
+												{
+													"assetSpec": "figure:misc/spiritShadow.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.895, "y": 0.343 },
+													"size": 0.3921,
+													"drawDepth": 2,
+													"nameTag": "none",
+													"foot": { "rotate": -20.693 }
+												},
+												{
+													"assetSpec": "comic:gradientRoundWhite.png",
+													"role": null,
+													"facing": "left",
+													"focus": "foot",
+													"anchor": { "x": 0.865, "y": -0.061 },
+													"size": 1.9232,
+													"drawDepth": 1,
+													"nameTag": "none",
+													"color": { "r": "0", "g": "0", "b": "0", "a": "0.56491226" }
+												},
+												{
+													"assetSpec": "comic:smokeCloud.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.533, "y": 0.001 },
+													"size": 0.8886,
+													"drawDepth": 2.75,
+													"nameTag": "none",
+													"foot": { "rotate": 17.001 },
+													"color": { "r": "0.3657864", "g": "0.1464943", "b": "0.31001279", "a": "0.92631578" }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_005.(target_is_spirit_shadow)~1_hero",
+													"pointerOwner": "hero",
+													"padXFraction": 0.242,
+													"padYFraction": 0.087,
+													"shrinkToFitText": true
+												},
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_005.(target_is_spirit_shadow)~2_target",
+													"style": "action",
+													"pointerOwner": "target",
+													"location": "topRight",
+													"padXFraction": 0.05,
+													"padYFraction": 0.264,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+												},
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_005.(target_is_spirit_shadow)~3_target",
+													"style": "action",
+													"pointerOwner": "target",
+													"padXFraction": 0.534,
+													"padYFraction": 0.349,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "half",
+											"actorSlots": [
+												{
+													"role": "hero",
+													"form": "frame-talk",
+													"equipment": { "mode": "leaveEquipment" },
+													"anchor": { "x": 0.284, "y": 0.598 },
+													"size": 0.516,
+													"head": { "rotate": 7.69 }
+												},
+												{
+													"role": "target",
+													"equipment": {},
+													"focus": "foot",
+													"anchor": { "x": 0.822, "y": -0.126 },
+													"size": 0.38,
+													"nameTag": "none",
+													"head": { "rotate": 0 },
+													"foot": { "rotate": 7.165 }
+												},
+												{
+													"assetSpec": "comic:action_pointerSquiggly1.png",
+													"role": null,
+													"facing": "left",
+													"focus": "foot",
+													"anchor": { "x": 0.85, "y": 0.496 },
+													"size": 0.25,
+													"drawDepth": 1.5,
+													"nameTag": "none",
+													"foot": { "rotate": -52.141 },
+													"colorFilter": { "filterName": "hover" }
+												},
+												{
+													"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.627, "y": 0.488 },
+													"size": 0.471,
+													"nameTag": "none",
+													"color": { "r": "0.92191523", "g": "0.84108269", "b": "0.60409635", "a": "1" },
+													"colorFilter": { "filterName": "canExplode", "strength": 0.03 }
+												},
+												{
+													"assetSpec": "comic:smokeCloud.png",
+													"role": null,
+													"focus": "foot",
+													"anchor": { "x": 0.743, "y": 0.135 },
+													"size": 0.4877,
+													"drawDepth": 3,
+													"nameTag": "none",
+													"color": { "r": "0.88582975", "g": "0.69007242", "b": "0.33960372", "a": "1" }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_006.(target_NOT_spirit_fire/spirit_water/spirit_le...)~1_hero",
+													"pointerOwner": "hero",
+													"padXFraction": 0.242,
+													"padYFraction": 0.087,
+													"shrinkToFitText": true
+												},
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_006.(target_NOT_spirit_fire/spirit_water/spirit_le...)~2_target",
+													"style": "action",
+													"pointerOwner": "target",
+													"location": "topRight",
+													"padXFraction": 0.05,
+													"padYFraction": 0.264,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+												},
+												{
+													"textSourceFile": "hero_creator_spiritCapturedLab_branch",
+													"textKey": "~07~player_chose_three~panel_006.(target_NOT_spirit_fire/spirit_water/spirit_le...)~3_target",
+													"style": "action",
+													"pointerOwner": "target",
+													"padXFraction": 0.534,
+													"padYFraction": 0.349,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "dX": 20.557102, "dY": 0, "pointerOrientH": "onRight" }
+												}
+											]
+										}
+									}
+								]
+							]
+						}
+					]
+				},
+				{ "class": "AddResources", "amount": "1" }
+			]
+		}
+	}
+]
+}
