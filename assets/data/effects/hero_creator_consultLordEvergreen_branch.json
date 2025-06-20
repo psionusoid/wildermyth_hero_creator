@@ -19,19 +19,26 @@
 	{ "template": "EVENT" },
 	{ "role": "hero", "template": "ANY", "type": "HERO", "injectedRole": "hero" },
 	{
+		"template": "PICK_BY_SCORE",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": "themePiece_petPinecone_pinecone",
+		"scoreThreshold": "1",
+		"fromRoles": [ "hero" ],
+		"aspects": [ "alive" ],
+		"aspectValues": [
+			{ "id": "austerity_evergreenStrength", "forbidden": true }
+		]
+	},
+	{
 		"role": "volunteer2",
 		"template": "PICK_BY_SCORE",
 		"choose": "BY_SCORE_OPTIONAL",
 		"scoreFunction": null,
 		"fromRoles": [ "hero" ],
-		"aspects": [ "alive" ]
-	},
-	{
-		"template": "PICK_BY_SCORE",
-		"choose": "BY_SCORE_OPTIONAL",
-		"scoreFunction": null,
-		"fromRoles": [ "hero" ],
-		"aspects": [ "alive" ]
+		"aspects": [ "alive" ],
+		"aspectValues": [
+			{ "id": "austerity_evergreenVoice", "forbidden": true }
+		]
 	},
 	{
 		"template": "CHOICE",
@@ -290,8 +297,42 @@
 	}
 ],
 "outcomes": [
-	{ "class": "IfPlayerChose", "ifPlayerChose": "one" },
-	{ "class": "IfPlayerChose", "ifPlayerChose": "two" },
+	{
+		"class": "IfPlayerChose",
+		"ifPlayerChose": "one",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "RemoveTheme",
+					"target": "hero",
+					"specificTheme": "petPinecone",
+					"specificPiece": "pinecone",
+					"clearSlot": "pet"
+				},
+				{
+					"class": "AddHistory",
+					"target": "hero",
+					"inlineHistory": {
+						"id": "encounter_heroesArriveAtSite_answertoAusterity.outcome",
+						"associatedAspects": [ "austerity_evergreenStrength" ]
+					}
+				}
+			]
+		}
+	},
+	{
+		"class": "IfPlayerChose",
+		"ifPlayerChose": "two",
+		"then": {
+			"class": "AddHistory",
+			"target": "hero",
+			"inlineHistory": {
+				"id": "encounter_heroesArriveAtSite_anAnswertoAusterity_silverandShadowsOptional.outcomeAlso",
+				"associatedAspects": [ "austerity_evergreenVoice" ]
+			}
+		}
+	},
 	{ "class": "IfPlayerChose", "ifPlayerChose": "three" }
 ]
 }
