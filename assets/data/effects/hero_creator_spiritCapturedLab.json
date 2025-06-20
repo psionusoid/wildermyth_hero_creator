@@ -1,0 +1,39 @@
+{
+"id": "hero_creator_spiritCapturedLab",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_spiritCapturedLab",
+	"modId": "hero_creator",
+	"author": "psionusoid"
+},
+"type": "REGION_TRIGGER",
+"verb": "MANEUVER",
+"ability": { "priority": "1" },
+"targets": [
+	{ "template": "SELF" },
+	{
+		"role": "volunteer",
+		"template": "INTERLOPER",
+		"notAlreadyMatchedAs": [ "self" ],
+		"range": "1.6"
+	},
+	{ "role": "target", "template": "SELF" },
+	{
+		"role": "hero",
+		"template": "ANY",
+		"type": "HERO",
+		"fromRoles": [ "volunteer" ]
+	},
+	{ "template": "COMPANY" }
+],
+"outcomes": [
+	{ "class": "Interrupt", "target": "volunteer" },
+	{ "class": "Animate", "script": "figures.hero_creator_spiritCapturedLab" },
+	{
+		"class": "Aspects",
+		"target": "company",
+		"removeAspects": [ "spiritCountdown" ]
+	},
+	{ "class": "Branch", "branchEvent": "hero_creator_spiritCapturedLab_branch" }
+]
+}

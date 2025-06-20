@@ -1,0 +1,8 @@
+[
+{
+	"modId": "hero_creator",
+	"id": "spirit_lab",
+	"effects": [ "hero_creator_spiritCaptureRegionLab", "spiritTeleportAcrossDoor" ],
+	"voice": "elementalSpirit"
+}
+]

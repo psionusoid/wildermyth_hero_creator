@@ -44,6 +44,73 @@
 		"combatantCards": true
 	},
 	{
+		"class": "StepM_SpawnExact",
+		"side": "BYSTANDER_ALLY",
+		"location": {
+			"class": "TileSpec.ExactTiles",
+			"offsetX": 30,
+			"offsetY": 4,
+			"xs": [ 21 ],
+			"ys": [ 20 ]
+		},
+		"monsterIds": [ "spirit_fire_lab" ]
+	},
+	{
+		"class": "StepM_SpawnExact",
+		"side": "BYSTANDER_ALLY",
+		"location": {
+			"class": "TileSpec.ExactTiles",
+			"offsetX": 30,
+			"offsetY": 4,
+			"xs": [ 21 ],
+			"ys": [ 23 ]
+		},
+		"monsterIds": [ "spirit_water_lab" ]
+	},
+	{
+		"class": "StepM_SpawnExact",
+		"side": "BYSTANDER_ALLY",
+		"location": {
+			"class": "TileSpec.ExactTiles",
+			"offsetX": 30,
+			"offsetY": 4,
+			"xs": [ 21 ],
+			"ys": [ 26 ]
+		},
+		"monsterIds": [ "spirit_leaf_lab" ]
+	},
+	{
+		"class": "StepM_SpawnExact",
+		"side": "BYSTANDER_ALLY",
+		"location": {
+			"class": "TileSpec.ExactTiles",
+			"offsetX": 30,
+			"offsetY": 4,
+			"xs": [ 24 ],
+			"ys": [ 26 ]
+		},
+		"monsterIds": [ "spirit_stone_lab" ]
+	},
+	{
+		"class": "Step_TestImmediate",
+		"then": [
+			{
+				"class": "StepM_SpawnExact",
+				"side": "BYSTANDER_ALLY",
+				"location": {
+					"class": "TileSpec.ExactTiles",
+					"offsetX": 30,
+					"offsetY": 4,
+					"xs": [ 27 ],
+					"ys": [ 26 ]
+				},
+				"monsterIds": [ "spirit_shadow_lab" ]
+			}
+		],
+		"value": "DLC_INSTALLED_OMENROAD",
+		"threshold": "1"
+	},
+	{
 		"class": "Step_AddObjectives",
 		"objectives": [ "Objective_Escape.M_hero_creator_0_1_lab" ]
 	}

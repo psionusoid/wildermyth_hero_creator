@@ -1,0 +1,27 @@
+{
+"id": "hero_creator_spiritCaptureRegionLab",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_spiritCaptureRegionLab",
+	"modId": "hero_creator",
+	"author": "psionusoid"
+},
+"type": "REGION",
+"ability": { "priority": "1" },
+"targets": [
+	{ "template": "SELF" }
+],
+"outcomes": [
+	{
+		"class": "MapRegion",
+		"region": {
+			"id": "captureRegion",
+			"feedbackType": "TUTORIAL_GOAL_UNIT",
+			"tileFilter": "floorOrScenery",
+			"endMoveTriggerEffects": [ "hero_creator_spiritCapturedLab" ]
+		},
+		"aura": "1.6",
+		"associateWithFaction": true
+	}
+]
+}

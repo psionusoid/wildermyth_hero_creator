@@ -1,0 +1,44 @@
+{
+"id": "spirit_shadow_lab",
+"modId": "hero_creator",
+"notes": "",
+"aspects": [
+	"monstrous",
+	"activeDefender",
+	"alive",
+	"spirit_lab",
+	"spirit_shadow",
+	"immuneToFireParam|spirit",
+	"immuneToAllDamage"
+],
+"stats": {
+	"HEALTH": "5+1d2",
+	"MONSTER_THREAT": "10",
+	"PERCEPTION": "10",
+	"ARMOR": "0",
+	"RANGE_ACCURACY": "100",
+	"DODGE": "50",
+	"MELEE_ACCURACY": "100",
+	"POTENCY": "0",
+	"SPEED": "4",
+	"PHYSICAL_DAMAGE_BONUS": "0",
+	"WARDING": "4",
+	"BLOCK": "50"
+},
+"scale": [ "((1+(HEALTH/8))*[0.95,1.05])/2", "((1+(HEALTH/8))*[0.95,1.05])/2" ],
+"combatDifficulty_1": {
+	"stats": {}
+},
+"combatDifficulty_10": {
+	"stats": {}
+},
+"combatDifficulty_30": {
+	"stats": {}
+},
+"baseColor": [ "[0.8,1.08]", "[0.8,1.08]", "[0.8,1.08]" ],
+"skin": [
+	{
+		"image": [ "misc/spiritShadow" ]
+	}
+]
+}
