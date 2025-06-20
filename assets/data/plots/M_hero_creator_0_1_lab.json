@@ -44,6 +44,18 @@
 		"combatantCards": true
 	},
 	{
+		"class": "StepM_SpawnExact",
+		"side": "BYSTANDER_ALLY",
+		"location": {
+			"class": "TileSpec.ExactTiles",
+			"offsetX": 30,
+			"offsetY": 4,
+			"xs": [ 21 ],
+			"ys": [ 20 ]
+		},
+		"monsterIds": [ "spirit_fire_lab" ]
+	},
+	{
 		"class": "Step_AddObjectives",
 		"objectives": [ "Objective_Escape.M_hero_creator_0_1_lab" ]
 	}
