@@ -865,5 +865,47 @@
 	"states": [
 		{ "name": "empty", "image": "scenery/cometLab.png" }
 	]
+},
+{
+	"id": "shrineWinterlockOn",
+	"image": "scenery/winterlockLab.png",
+	"tags": [],
+	"lengthRange": [ 1.25, 1.5 ],
+	"aspectRatio": 0.5,
+	"stretchAspectRatio": "1",
+	"submerge": "0",
+	"scale": "1",
+	"thickness": "0.025",
+	"r": "[0.9,1.05]",
+	"g": "[0.9,1.05]",
+	"b": "[0.9,1.05]",
+	"aspects": [
+        "rewardRegionLab|hero_creator_faceWinterlock|NONE",
+		"nonInteractiveShowTooltip"
+	],
+	"states": [
+		{ "name": "empty", "image": "scenery/winterlockLab.png" }
+	]
+},
+{
+	"id": "shrineFontOn",
+	"image": "scenery/fontLab.png",
+	"tags": [],
+	"lengthRange": [ 1, 1.25 ],
+	"aspectRatio": 1.1085714,
+	"stretchAspectRatio": "1",
+	"submerge": "0",
+	"scale": "1",
+	"thickness": "0.025",
+	"r": "[0.9,1.05]",
+	"g": "[0.9,1.05]",
+	"b": "[0.9,1.05]",
+	"aspects": [
+        "rewardRegionLab|hero_creator_touchFont|NONE",
+		"nonInteractiveShowTooltip"
+	],
+	"states": [
+		{ "name": "empty", "image": "scenery/fontLab.png" }
+	]
 }
 ]

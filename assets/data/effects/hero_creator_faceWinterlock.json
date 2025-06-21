@@ -1,0 +1,40 @@
+{
+"id": "hero_creator_faceWinterlock",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_faceWinterlock",
+	"modId": "hero_creator",
+	"author": "psionusoid",
+	"tags": [ "okToMarkDone" ],
+	"debug": true
+},
+"type": "ABILITY",
+"verb": "MANEUVER",
+"ability": { "icon": "rewardTransform", "category": "research", "priority": "1" },
+"targets": [
+	{
+		"template": "SELF",
+		"aspectsOneOf": [ "human", "elthiarBaseAbilities" ]
+	},
+	{
+		"role": "hothead",
+		"template": "PICK_BY_SCORE",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": null,
+		"fromRoles": null,
+		"themes": { "eligibleForTheme": "frost", "eligibleForPiece": "frostStreak" }
+	}
+],
+"outcomes": [
+	{
+		"class": "IfRolesArePresent",
+		"rolesArePresent": [ "hothead" ],
+		"then": {
+			"class": "ApplyTheme",
+			"target": "hothead",
+			"theme": "frost",
+			"piece": "frostStreak"
+		}
+	}
+]
+}

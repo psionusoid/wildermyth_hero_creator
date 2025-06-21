@@ -11,6 +11,16 @@
 },
 {
 	"modId": "hero_creator",
+	"id": "hero_creator_faceWinterlock|_NONE_|_ENTITY_",
+	"parameters": [
+		{},
+		{ "replace": "_ENTITY_", "isEntity": true }
+	],
+	"effects": [ "hero_creator_faceWinterlock" ],
+	"importance": -1
+},
+{
+	"modId": "hero_creator",
 	"id": "hero_creator_findStarheart|_NONE_|_ENTITY_",
 	"parameters": [
 		{},
@@ -67,6 +77,16 @@
 		{ "replace": "_ENTITY_", "isEntity": true }
 	],
 	"effects": [ "hero_creator_consultLordEvergreen" ],
+	"importance": -1
+},
+{
+	"modId": "hero_creator",
+	"id": "hero_creator_touchFont|_NONE_|_ENTITY_",
+	"parameters": [
+		{},
+		{ "replace": "_ENTITY_", "isEntity": true }
+	],
+	"effects": [ "hero_creator_touchFont" ],
 	"importance": -1
 },
 {

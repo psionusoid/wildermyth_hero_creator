@@ -1,0 +1,56 @@
+{
+"id": "hero_creator_touchFont",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "hero_creator_touchFont",
+	"modId": "hero_creator",
+	"author": "psionusoid",
+	"tags": [ "okToMarkDone" ],
+	"debug": true
+},
+"type": "ABILITY",
+"verb": "MANEUVER",
+"ability": { "icon": "rewardTransform", "category": "research", "priority": "1" },
+"targets": [
+	{
+		"template": "SELF",
+		"aspectsOneOf": [ "human", "elthiarBaseAbilities" ]
+	},
+	{
+		"role": "hothead",
+		"template": "PICK_BY_SCORE",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": "(200*warrior)+HOTHEAD",
+		"scoreThreshold": "200",
+		"fromRoles": null,
+		"aspectValues": [
+			{ "id": "theme_fire", "forbidden": true },
+			{ "id": "theme_deepist", "forbidden": true },
+			{ "id": "theme_bear", "forbidden": true },
+			{ "id": "theme_crow", "forbidden": true },
+			{ "id": "theme_gem", "forbidden": true },
+			{ "id": "theme_tree", "forbidden": true },
+			{ "id": "theme_foothill", "forbidden": true },
+			{ "id": "theme_star", "forbidden": true },
+			{ "id": "theme_shadow", "forbidden": true },
+			{ "id": "hook_Mysterious", "forbidden": true },
+			{ "id": "hook_Destiny", "forbidden": true },
+			{ "id": "hook_Inhabited", "forbidden": true },
+			{ "id": "hook_Dreamer", "forbidden": true }
+		],
+		"themes": { "eligibleForTheme": "spellTouched", "eligibleForPiece": "skin" }
+	}
+],
+"outcomes": [
+	{
+		"class": "IfRolesArePresent",
+		"rolesArePresent": [ "hothead" ],
+		"then": {
+			"class": "ApplyTheme",
+			"target": "hothead",
+			"theme": "spellTouched",
+			"piece": "skin"
+		}
+	}
+]
+}
