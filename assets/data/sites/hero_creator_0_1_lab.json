@@ -261,6 +261,20 @@
 				"adjustLength": 0.5,
 				"wobble": false,
 				"flipX": "no"
+			},
+			{
+				"sceneryId": "shrineFontOn",
+				"a": [ 43, 21 ],
+				"b": [ 43, 21 ],
+				"wobble": false,
+				"flipX": "no"
+			},
+			{
+				"sceneryId": "shrineWinterlockOn",
+				"a": [ 43, 24 ],
+				"b": [ 43, 24 ],
+				"wobble": false,
+				"flipX": "no"
 			}
 		],
 		"offsetX": 30,
