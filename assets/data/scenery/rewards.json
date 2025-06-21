@@ -843,7 +843,7 @@
 	"states": [
 		{ "name": "empty", "image": "scenery/pineGiantLab.png" }
 	]
-}
+},
 {
 	"id": "shrineStarheartOn",
 	"image": "scenery/cometLab.png",
